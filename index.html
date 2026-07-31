@@ -163,7 +163,8 @@
         .modal-images img {
             width: 100%; border-radius: 10px; box-shadow: var(--shadow); border: 1px solid var(--border);
         }
-        .modal-images .pdf-embed { width: 100%; height: 700px; border-radius: 10px; border: 1px solid var(--border); }
+        .modal-images .pdf-embed { width: 100%; border-radius: 10px; border: 1px solid var(--border); background: white; }
+        .modal-images canvas { width: 100%; border-radius: 10px; box-shadow: var(--shadow); border: 1px solid var(--border); display: block; }
         .modal-images .page-label { font-size: 0.7rem; color: var(--text-light); font-weight: 500; margin-top: -0.4rem; }
         .no-results { text-align: center; padding: 3rem 2rem; color: var(--text-light); }
 
@@ -271,7 +272,11 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script>
+    if (window.pdfjsLib) {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
     let allData = [];
 
     function toggleFilters() {
@@ -398,17 +403,61 @@
         const files = e.sourceFiles || [];
         if (!files.length) { img.innerHTML = '<p style="color:var(--text-light)">No source file available.</p>'; }
         else {
-            img.innerHTML = files.map((f,idx) => {
+            img.innerHTML = '';
+            files.forEach((f, idx) => {
                 const ext = f.split('.').pop().toLowerCase();
                 const src = encodeURI(f).replace(/#/g, '%23').replace(/\?/g, '%3F');
-                if (['png','jpg','jpeg'].includes(ext)) return `<img src="${src}" alt="${e.name}" loading="lazy">${files.length>1?`<div class="page-label">Page ${idx+1} of ${files.length}</div>`:''}`;
-                if (ext==='pdf') return `<iframe class="pdf-embed" src="${src}" title="${e.name}"></iframe>${files.length>1?`<div class="page-label">Doc ${idx+1} of ${files.length}</div>`:''}`;
-                if (ext==='mp4') return `<video controls style="width:100%;border-radius:10px"><source src="${src}" type="video/mp4"></video>`;
-                return '';
-            }).join('');
+                if (['png','jpg','jpeg'].includes(ext)) {
+                    const imgEl = document.createElement('img');
+                    imgEl.src = src;
+                    imgEl.alt = e.name;
+                    imgEl.loading = 'lazy';
+                    img.appendChild(imgEl);
+                    if (files.length > 1) {
+                        const label = document.createElement('div');
+                        label.className = 'page-label';
+                        label.textContent = `Page ${idx+1} of ${files.length}`;
+                        img.appendChild(label);
+                    }
+                } else if (ext === 'pdf') {
+                    renderPDF(src, img, files.length > 1 ? idx + 1 : null, files.length);
+                } else if (ext === 'mp4') {
+                    img.innerHTML += `<video controls style="width:100%;border-radius:10px"><source src="${src}" type="video/mp4"></video>`;
+                }
+            });
         }
         document.getElementById('modal-overlay').classList.add('active');
         document.body.style.overflow = 'hidden';
+    }
+
+    async function renderPDF(url, container, pageNum, totalFiles) {
+        try {
+            const pdf = await pdfjsLib.getDocument(url).promise;
+            for (let p = 1; p <= pdf.numPages; p++) {
+                const page = await pdf.getPage(p);
+                const scale = 2;
+                const viewport = page.getViewport({ scale });
+                const canvas = document.createElement('canvas');
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+                const ctx = canvas.getContext('2d');
+                await page.render({ canvasContext: ctx, viewport }).promise;
+                container.appendChild(canvas);
+            }
+            if (pageNum) {
+                const label = document.createElement('div');
+                label.className = 'page-label';
+                label.textContent = `Document ${pageNum} of ${totalFiles}`;
+                container.appendChild(label);
+            }
+        } catch (err) {
+            const fallback = document.createElement('a');
+            fallback.href = url;
+            fallback.target = '_blank';
+            fallback.textContent = '📄 Open PDF';
+            fallback.style.cssText = 'display:block;text-align:center;padding:2rem;color:var(--accent);font-weight:600;';
+            container.appendChild(fallback);
+        }
     }
 
     function closeModal(event) {
