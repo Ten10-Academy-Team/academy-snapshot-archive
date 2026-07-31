@@ -9,10 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         :root {
             --primary: #1a1a2e;
-            --secondary: #16213e;
             --accent: #0f3460;
             --highlight: #e94560;
             --text: #333;
@@ -23,100 +21,102 @@
             --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
             --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
         }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        .header {
+        /* Slim top bar */
+        .topbar {
             background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-            color: white;
-            padding: 2.5rem 2rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: var(--shadow-lg);
+            color: white; padding: 0.6rem 1.5rem;
+            display: flex; align-items: center; justify-content: space-between;
+            position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow);
         }
-        .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.25rem; }
-        .header p { opacity: 0.8; font-size: 0.95rem; font-weight: 300; }
+        .topbar-title { font-size: 0.95rem; font-weight: 600; }
+        .topbar-stats { display: flex; gap: 1.5rem; }
+        .topbar-stat { display: flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; }
+        .topbar-stat strong { color: var(--highlight); font-size: 1rem; }
 
-        .stats-bar {
-            display: flex; justify-content: center;
-            gap: 2rem; margin-top: 1rem; flex-wrap: wrap;
+        .container { max-width: 1400px; margin: 0 auto; padding: 1rem 1.5rem; }
+
+        /* Collapsible filters */
+        .filters-bar {
+            background: var(--card-bg); border-radius: 10px;
+            margin-bottom: 1rem; box-shadow: var(--shadow); border: 1px solid var(--border);
+            overflow: hidden;
         }
-        .stat { text-align: center; }
-        .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--highlight); }
-        .stat-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7; }
-
-        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
-
-        /* Filters */
-        .filters-section {
-            background: var(--card-bg); border-radius: 16px; padding: 1.5rem;
-            margin-bottom: 2rem; box-shadow: var(--shadow); border: 1px solid var(--border);
+        .filters-toggle {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.6rem 1rem; cursor: pointer; user-select: none;
         }
-        .filters-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-        .filters-header h3 { font-size: 1rem; font-weight: 600; color: var(--primary); }
+        .filters-toggle:hover { background: var(--bg); }
+        .filters-toggle-left { display: flex; align-items: center; gap: 0.75rem; }
+        .filters-toggle h3 { font-size: 0.85rem; font-weight: 600; color: var(--primary); }
+        .filters-toggle .results-count { font-size: 0.8rem; color: var(--text-light); }
+        .filters-toggle .results-count strong { color: var(--primary); }
+        .filters-toggle-right { display: flex; align-items: center; gap: 0.75rem; }
+        .toggle-arrow {
+            transition: transform 0.2s; font-size: 0.75rem; color: var(--text-light);
+        }
+        .filters-bar.open .toggle-arrow { transform: rotate(180deg); }
         .clear-filters {
             background: none; border: 1px solid var(--highlight); color: var(--highlight);
-            padding: 0.4rem 1rem; border-radius: 20px; cursor: pointer;
-            font-size: 0.8rem; font-weight: 500; transition: all 0.2s;
+            padding: 0.25rem 0.7rem; border-radius: 14px; cursor: pointer;
+            font-size: 0.7rem; font-weight: 500; transition: all 0.2s;
         }
         .clear-filters:hover { background: var(--highlight); color: white; }
-        .filters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+
+        .filters-content {
+            max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            padding: 0 1rem;
+        }
+        .filters-bar.open .filters-content { max-height: 300px; padding: 0 1rem 1rem; }
+
+        .filters-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.6rem;
+        }
         .filter-group label {
-            display: block; font-size: 0.75rem; font-weight: 600;
-            text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-light); margin-bottom: 0.4rem;
+            display: block; font-size: 0.65rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-light); margin-bottom: 0.2rem;
         }
         .filter-group select, .filter-group input {
-            width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border);
-            border-radius: 8px; font-size: 0.85rem; font-family: 'Inter', sans-serif;
+            width: 100%; padding: 0.4rem 0.6rem; border: 1px solid var(--border);
+            border-radius: 6px; font-size: 0.8rem; font-family: 'Inter', sans-serif;
             background: var(--bg); transition: border-color 0.2s;
         }
         .filter-group select:focus, .filter-group input:focus { outline: none; border-color: var(--accent); }
 
-        .results-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding: 0 0.5rem; }
-        .results-count { font-size: 0.9rem; color: var(--text-light); }
-        .results-count strong { color: var(--primary); }
-
         /* Card Grid */
-        .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.5rem; }
+        .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
 
         .card {
-            background: var(--card-bg); border-radius: 16px; overflow: hidden;
+            background: var(--card-bg); border-radius: 12px; overflow: hidden;
             box-shadow: var(--shadow); border: 1px solid var(--border);
             transition: all 0.3s ease; cursor: pointer; position: relative;
         }
-        .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
-        .card-accent { height: 4px; background: linear-gradient(90deg, var(--highlight), var(--accent)); }
-        .card-body { padding: 1.5rem; }
+        .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
+        .card-accent { height: 3px; background: linear-gradient(90deg, var(--highlight), var(--accent)); }
+        .card-body { padding: 1rem 1.2rem; }
         .card-issue {
-            display: inline-flex; align-items: center; gap: 0.4rem;
-            background: var(--bg); padding: 0.25rem 0.75rem; border-radius: 20px;
-            font-size: 0.7rem; font-weight: 600; color: var(--accent); margin-bottom: 0.75rem;
+            display: inline-flex; align-items: center;
+            background: var(--bg); padding: 0.15rem 0.6rem; border-radius: 14px;
+            font-size: 0.65rem; font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;
         }
-        .card-name { font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem; }
-        .card-role { font-size: 0.85rem; color: var(--highlight); font-weight: 500; margin-bottom: 0.75rem; }
-        .card-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
+        .card-name { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.15rem; }
+        .card-role { font-size: 0.8rem; color: var(--highlight); font-weight: 500; margin-bottom: 0.5rem; }
+        .card-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; }
         .meta-tag {
-            display: inline-flex; align-items: center; gap: 0.3rem;
-            padding: 0.2rem 0.6rem; background: var(--bg); border-radius: 6px;
-            font-size: 0.72rem; color: var(--text-light); font-weight: 500;
+            display: inline-flex; align-items: center; gap: 0.2rem;
+            padding: 0.15rem 0.5rem; background: var(--bg); border-radius: 5px;
+            font-size: 0.68rem; color: var(--text-light); font-weight: 500;
         }
-        .card-client { font-size: 0.85rem; color: var(--text); font-weight: 500; }
         .relocated-badge {
-            position: absolute; top: 1rem; right: 1rem;
-            background: #fef3c7; color: #92400e; padding: 0.2rem 0.5rem;
-            border-radius: 4px; font-size: 0.65rem; font-weight: 600; text-transform: uppercase;
+            position: absolute; top: 0.75rem; right: 0.75rem;
+            background: #fef3c7; color: #92400e; padding: 0.15rem 0.4rem;
+            border-radius: 4px; font-size: 0.6rem; font-weight: 600; text-transform: uppercase;
         }
         .edition-badge {
-            position: absolute; top: 1rem; right: 1rem;
+            position: absolute; top: 0.75rem; right: 0.75rem;
             background: linear-gradient(135deg, var(--highlight), #ff6b6b); color: white;
-            padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.65rem; font-weight: 600;
+            padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.6rem; font-weight: 600;
         }
 
         /* Modal */
@@ -124,167 +124,142 @@
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
             z-index: 1000; justify-content: center; align-items: flex-start;
-            padding: 2rem; overflow-y: auto;
+            padding: 1.5rem; overflow-y: auto;
         }
         .modal-overlay.active { display: flex; }
-
         .modal {
-            background: var(--card-bg); border-radius: 20px; width: 100%;
-            max-width: 900px; margin: auto;
-            box-shadow: var(--shadow-lg); animation: modalIn 0.3s ease;
-            overflow: hidden;
+            background: var(--card-bg); border-radius: 16px; width: 100%;
+            max-width: 900px; margin: auto; box-shadow: var(--shadow-lg);
+            animation: modalIn 0.3s ease; overflow: hidden;
         }
         @keyframes modalIn { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-
         .modal-header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-            color: white; padding: 1.5rem 2rem; position: relative;
+            color: white; padding: 1.2rem 1.5rem; position: relative;
         }
         .modal-close {
-            position: absolute; top: 1rem; right: 1.5rem;
+            position: absolute; top: 0.75rem; right: 1rem;
             background: rgba(255,255,255,0.2); border: none; color: white;
-            width: 36px; height: 36px; border-radius: 50%; font-size: 1.2rem;
+            width: 32px; height: 32px; border-radius: 50%; font-size: 1.1rem;
             cursor: pointer; display: flex; align-items: center; justify-content: center;
-            transition: background 0.2s;
         }
         .modal-close:hover { background: rgba(255,255,255,0.3); }
         .modal-issue-badge {
             display: inline-block; background: rgba(255,255,255,0.15);
-            padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem;
-            font-weight: 500; margin-bottom: 0.5rem;
+            padding: 0.2rem 0.6rem; border-radius: 14px; font-size: 0.7rem;
+            font-weight: 500; margin-bottom: 0.4rem;
         }
-        .modal-name { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.2rem; }
-        .modal-role { font-size: 0.9rem; opacity: 0.85; }
-
-        .modal-content { padding: 1.5rem 2rem 2rem; }
-
-        /* Meta pills in modal */
-        .modal-meta-row {
-            display: flex; flex-wrap: wrap; gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
+        .modal-name { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.15rem; }
+        .modal-role { font-size: 0.85rem; opacity: 0.85; }
+        .modal-content { padding: 1.2rem 1.5rem 1.5rem; }
+        .modal-meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
         .modal-meta-pill {
             background: var(--bg); border: 1px solid var(--border);
-            padding: 0.35rem 0.8rem; border-radius: 20px;
-            font-size: 0.78rem; color: var(--text); font-weight: 500;
+            padding: 0.25rem 0.6rem; border-radius: 14px;
+            font-size: 0.72rem; color: var(--text); font-weight: 500;
         }
-        .modal-meta-pill strong { color: var(--accent); margin-right: 0.3rem; }
-
-        /* Image viewer */
-        .modal-images {
-            display: flex; flex-direction: column; gap: 1rem;
-            align-items: center;
-        }
+        .modal-meta-pill strong { color: var(--accent); margin-right: 0.2rem; }
+        .modal-images { display: flex; flex-direction: column; gap: 0.75rem; align-items: center; }
         .modal-images img {
-            width: 100%; max-width: 100%; border-radius: 12px;
-            box-shadow: var(--shadow); border: 1px solid var(--border);
+            width: 100%; border-radius: 10px; box-shadow: var(--shadow); border: 1px solid var(--border);
         }
-        .modal-images .pdf-embed {
-            width: 100%; height: 700px; border-radius: 12px;
-            border: 1px solid var(--border);
-        }
-        .modal-images .page-label {
-            font-size: 0.75rem; color: var(--text-light);
-            font-weight: 500; text-align: center; margin-top: -0.5rem;
-        }
+        .modal-images .pdf-embed { width: 100%; height: 700px; border-radius: 10px; border: 1px solid var(--border); }
+        .modal-images .page-label { font-size: 0.7rem; color: var(--text-light); font-weight: 500; margin-top: -0.4rem; }
+        .no-results { text-align: center; padding: 3rem 2rem; color: var(--text-light); }
 
-        /* No results */
-        .no-results { text-align: center; padding: 4rem 2rem; color: var(--text-light); }
-        .no-results p { font-size: 1rem; margin-top: 0.5rem; }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .header h1 { font-size: 1.5rem; }
-            .container { padding: 1rem; }
+            .topbar { flex-direction: column; gap: 0.4rem; text-align: center; }
+            .container { padding: 0.75rem; }
             .cards-grid { grid-template-columns: 1fr; }
             .filters-grid { grid-template-columns: 1fr 1fr; }
             .modal { margin: 0.5rem; }
-            .modal-content { padding: 1rem; }
-            .stats-bar { gap: 1rem; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Academy Snapshot Archive</h1>
-        <p>Sharing what Junior Consultants are working on</p>
-        <div class="stats-bar">
-            <div class="stat"><div class="stat-number" id="stat-people">-</div><div class="stat-label">People</div></div>
-            <div class="stat"><div class="stat-number" id="stat-issues">-</div><div class="stat-label">Issues</div></div>
-            <div class="stat"><div class="stat-number" id="stat-clients">-</div><div class="stat-label">Clients</div></div>
-            <div class="stat"><div class="stat-number" id="stat-academies">-</div><div class="stat-label">Cohorts</div></div>
+    <div class="topbar">
+        <span class="topbar-title">Academy Snapshot Archive</span>
+        <div class="topbar-stats">
+            <div class="topbar-stat"><strong id="stat-people">-</strong> People</div>
+            <div class="topbar-stat"><strong id="stat-issues">-</strong> Issues</div>
+            <div class="topbar-stat"><strong id="stat-clients">-</strong> Clients</div>
+            <div class="topbar-stat"><strong id="stat-academies">-</strong> Cohorts</div>
         </div>
     </div>
 
     <div class="container">
-        <div class="filters-section">
-            <div class="filters-header">
-                <h3>🔍 Filter Snapshots</h3>
-                <button class="clear-filters" onclick="clearFilters()">Clear All</button>
-            </div>
-            <div class="filters-grid">
-                <div class="filter-group">
-                    <label>Search Name</label>
-                    <input type="text" id="filter-search" placeholder="Type a name..." oninput="applyFilters()">
+        <div class="filters-bar" id="filters-bar">
+            <div class="filters-toggle" onclick="toggleFilters()">
+                <div class="filters-toggle-left">
+                    <h3>Filters</h3>
+                    <span class="results-count">Showing <strong id="results-num">0</strong> results</span>
                 </div>
-                <div class="filter-group">
-                    <label>Sector</label>
-                    <select id="filter-sector" onchange="applyFilters()"><option value="">All Sectors</option></select>
-                </div>
-                <div class="filter-group">
-                    <label>Role Type</label>
-                    <select id="filter-role-cat" onchange="applyFilters()"><option value="">All Roles</option></select>
-                </div>
-                <div class="filter-group">
-                    <label>Specialism</label>
-                    <select id="filter-specialism" onchange="applyFilters()"><option value="">All Specialisms</option></select>
-                </div>
-                <div class="filter-group">
-                    <label>Client</label>
-                    <select id="filter-client" onchange="applyFilters()"><option value="">All Clients</option></select>
-                </div>
-                <div class="filter-group">
-                    <label>Academy Cohort</label>
-                    <select id="filter-academy" onchange="applyFilters()"><option value="">All Cohorts</option></select>
-                </div>
-                <div class="filter-group">
-                    <label>Relocated</label>
-                    <select id="filter-relocated" onchange="applyFilters()">
-                        <option value="">All</option>
-                        <option value="true">Yes - Relocated</option>
-                        <option value="false">No</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label>Working Model</label>
-                    <select id="filter-location" onchange="applyFilters()">
-                        <option value="">All</option>
-                        <option value="Remote">Remote</option>
-                        <option value="Hybrid">Hybrid</option>
-                        <option value="Office">Office/On-site</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label>Edition</label>
-                    <select id="filter-edition" onchange="applyFilters()"><option value="">All Editions</option></select>
+                <div class="filters-toggle-right">
+                    <button class="clear-filters" onclick="event.stopPropagation(); clearFilters()">Clear</button>
+                    <span class="toggle-arrow">▼</span>
                 </div>
             </div>
-        </div>
-
-        <div class="results-info">
-            <div class="results-count">Showing <strong id="results-num">0</strong> results</div>
+            <div class="filters-content">
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label>Name</label>
+                        <input type="text" id="filter-search" placeholder="Search..." oninput="applyFilters()">
+                    </div>
+                    <div class="filter-group">
+                        <label>Sector</label>
+                        <select id="filter-sector" onchange="applyFilters()"><option value="">All</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Role Type</label>
+                        <select id="filter-role-cat" onchange="applyFilters()"><option value="">All</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Specialism</label>
+                        <select id="filter-specialism" onchange="applyFilters()"><option value="">All</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Client</label>
+                        <select id="filter-client" onchange="applyFilters()"><option value="">All</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Cohort</label>
+                        <select id="filter-academy" onchange="applyFilters()"><option value="">All</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Relocated</label>
+                        <select id="filter-relocated" onchange="applyFilters()">
+                            <option value="">All</option>
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Location</label>
+                        <select id="filter-location" onchange="applyFilters()">
+                            <option value="">All</option>
+                            <option value="Remote">Remote</option>
+                            <option value="Hybrid">Hybrid</option>
+                            <option value="Office">Office</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Edition</label>
+                        <select id="filter-edition" onchange="applyFilters()"><option value="">All</option></select>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="cards-grid" id="cards-container">
-            <div class="no-results"><p>Loading snapshots...</p></div>
+            <div class="no-results"><p>Loading...</p></div>
         </div>
     </div>
 
     <!-- Modal -->
     <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
-        <div class="modal" id="modal" onclick="event.stopPropagation()">
+        <div class="modal" onclick="event.stopPropagation()">
             <div class="modal-header">
-                <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+                <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
                 <div class="modal-issue-badge" id="modal-issue"></div>
                 <div class="modal-name" id="modal-name"></div>
                 <div class="modal-role" id="modal-role"></div>
@@ -299,186 +274,136 @@
     <script>
     let allData = [];
 
+    function toggleFilters() {
+        document.getElementById('filters-bar').classList.toggle('open');
+    }
+
     async function init() {
         try {
-            const response = await fetch('snapshot_data.json');
-            const data = await response.json();
+            const resp = await fetch('snapshot_data.json');
+            const data = await resp.json();
             allData = data.entries;
             populateFilters();
             updateStats();
             applyFilters();
         } catch (err) {
             document.getElementById('cards-container').innerHTML =
-                '<div class="no-results"><p>Error loading data. Make sure snapshot_data.json is accessible.</p></div>';
-            console.error(err);
+                '<div class="no-results"><p>Error loading data.</p></div>';
         }
     }
 
     function populateFilters() {
-        const sectors = [...new Set(allData.map(e => e.sector))].filter(Boolean).sort();
-        const roleCats = [...new Set(allData.map(e => e.roleCategory))].filter(Boolean).sort();
-        const specialisms = [...new Set(allData.map(e => e.specialism))].filter(Boolean).sort();
-        const clients = [...new Set(allData.map(e => e.client))].filter(Boolean).sort();
-        const academies = [...new Set(allData.map(e => e.academy))].filter(Boolean).sort((a,b) => a-b);
-        const editions = [...new Set(allData.map(e => e.editionType))].filter(Boolean).sort();
-
-        fillSelect('filter-sector', sectors);
-        fillSelect('filter-role-cat', roleCats);
-        fillSelect('filter-specialism', specialisms);
-        fillSelect('filter-client', clients);
-        fillSelect('filter-academy', academies.map(String));
-        fillSelect('filter-edition', editions);
+        const unique = (key) => [...new Set(allData.map(e => e[key]))].filter(Boolean).sort();
+        fillSelect('filter-sector', unique('sector'));
+        fillSelect('filter-role-cat', unique('roleCategory'));
+        fillSelect('filter-specialism', unique('specialism'));
+        fillSelect('filter-client', unique('client'));
+        fillSelect('filter-academy', [...new Set(allData.map(e => e.academy))].filter(Boolean).sort((a,b)=>a-b).map(String));
+        fillSelect('filter-edition', unique('editionType'));
     }
 
     function fillSelect(id, options) {
         const sel = document.getElementById(id);
-        const firstOpt = sel.options[0].text;
-        sel.innerHTML = `<option value="">${firstOpt}</option>`;
-        options.forEach(opt => {
-            const o = document.createElement('option');
-            o.value = opt; o.textContent = opt;
-            sel.appendChild(o);
-        });
+        const first = sel.options[0].text;
+        sel.innerHTML = `<option value="">${first}</option>` + options.map(o => `<option value="${o}">${o}</option>`).join('');
     }
 
     function updateStats() {
-        const names = new Set(allData.map(e => e.name));
-        const issues = new Set(allData.map(e => e.issue));
-        const clients = new Set(allData.map(e => e.client).filter(c => c && !c.includes('Internal')));
-        const academies = new Set(allData.map(e => e.academy).filter(Boolean));
-        document.getElementById('stat-people').textContent = names.size;
-        document.getElementById('stat-issues').textContent = issues.size;
-        document.getElementById('stat-clients').textContent = clients.size;
-        document.getElementById('stat-academies').textContent = academies.size;
+        document.getElementById('stat-people').textContent = new Set(allData.map(e => e.name)).size;
+        document.getElementById('stat-issues').textContent = new Set(allData.map(e => e.issue)).size;
+        document.getElementById('stat-clients').textContent = new Set(allData.map(e => e.client).filter(c => c && !c.includes('Internal'))).size;
+        document.getElementById('stat-academies').textContent = new Set(allData.map(e => e.academy).filter(Boolean)).size;
     }
 
     function applyFilters() {
-        const search = document.getElementById('filter-search').value.toLowerCase();
-        const sector = document.getElementById('filter-sector').value;
-        const roleCat = document.getElementById('filter-role-cat').value;
-        const specialism = document.getElementById('filter-specialism').value;
-        const client = document.getElementById('filter-client').value;
-        const academy = document.getElementById('filter-academy').value;
-        const relocated = document.getElementById('filter-relocated').value;
-        const location = document.getElementById('filter-location').value;
-        const edition = document.getElementById('filter-edition').value;
+        const s = document.getElementById('filter-search').value.toLowerCase();
+        const f = {
+            sector: document.getElementById('filter-sector').value,
+            roleCat: document.getElementById('filter-role-cat').value,
+            specialism: document.getElementById('filter-specialism').value,
+            client: document.getElementById('filter-client').value,
+            academy: document.getElementById('filter-academy').value,
+            relocated: document.getElementById('filter-relocated').value,
+            location: document.getElementById('filter-location').value,
+            edition: document.getElementById('filter-edition').value,
+        };
 
-        const filtered = allData.filter(entry => {
-            if (search && !entry.name.toLowerCase().includes(search)) return false;
-            if (sector && entry.sector !== sector) return false;
-            if (roleCat && entry.roleCategory !== roleCat) return false;
-            if (specialism && entry.specialism !== specialism) return false;
-            if (client && entry.client !== client) return false;
-            if (academy && String(entry.academy) !== academy) return false;
-            if (relocated === 'true' && !entry.relocated) return false;
-            if (relocated === 'false' && entry.relocated) return false;
-            if (location) {
-                const loc = (entry.location || '').toLowerCase();
-                if (location === 'Remote' && !loc.includes('remote')) return false;
-                if (location === 'Hybrid' && !loc.includes('hybrid')) return false;
-                if (location === 'Office' && !loc.includes('office') && !loc.includes('on-site') && !loc.includes('site')) return false;
+        const filtered = allData.filter(e => {
+            if (s && !e.name.toLowerCase().includes(s)) return false;
+            if (f.sector && e.sector !== f.sector) return false;
+            if (f.roleCat && e.roleCategory !== f.roleCat) return false;
+            if (f.specialism && e.specialism !== f.specialism) return false;
+            if (f.client && e.client !== f.client) return false;
+            if (f.academy && String(e.academy) !== f.academy) return false;
+            if (f.relocated === 'true' && !e.relocated) return false;
+            if (f.relocated === 'false' && e.relocated) return false;
+            if (f.location) {
+                const loc = (e.location || '').toLowerCase();
+                if (f.location === 'Remote' && !loc.includes('remote')) return false;
+                if (f.location === 'Hybrid' && !loc.includes('hybrid')) return false;
+                if (f.location === 'Office' && !loc.includes('office') && !loc.includes('on-site') && !loc.includes('site')) return false;
             }
-            if (edition && entry.editionType !== edition) return false;
+            if (f.edition && e.editionType !== f.edition) return false;
             return true;
-        });
-
-        // Sort by issue number descending (newest first)
-        filtered.sort((a, b) => b.issue - a.issue);
+        }).sort((a, b) => b.issue - a.issue);
 
         document.getElementById('results-num').textContent = filtered.length;
         renderCards(filtered);
     }
 
     function renderCards(entries) {
-        const container = document.getElementById('cards-container');
-        if (entries.length === 0) {
-            container.innerHTML = '<div class="no-results"><p>No snapshots match your filters. Try adjusting or clearing them.</p></div>';
-            return;
-        }
-
-        container.innerHTML = entries.map((entry, idx) => {
-            const badgeHtml = entry.editionType && entry.editionType !== 'Standard'
+        const c = document.getElementById('cards-container');
+        if (!entries.length) { c.innerHTML = '<div class="no-results"><p>No matches found.</p></div>'; return; }
+        c.innerHTML = entries.map(entry => {
+            const badge = entry.editionType && entry.editionType !== 'Standard'
                 ? `<div class="edition-badge">${entry.editionType}</div>`
-                : entry.relocated
-                    ? `<div class="relocated-badge">📍 Relocated</div>`
-                    : '';
-
-            return `
-            <div class="card" onclick="openModal(${allData.indexOf(entry)})">
-                <div class="card-accent"></div>
-                ${badgeHtml}
+                : entry.relocated ? `<div class="relocated-badge">📍 Relocated</div>` : '';
+            return `<div class="card" onclick="openModal(${allData.indexOf(entry)})">
+                <div class="card-accent"></div>${badge}
                 <div class="card-body">
-                    <div class="card-issue">📰 Issue ${entry.issue} • ${entry.date}</div>
+                    <div class="card-issue">Issue ${entry.issue} · ${entry.date}</div>
                     <div class="card-name">${entry.name}</div>
                     <div class="card-role">${entry.role}</div>
                     <div class="card-meta">
-                        <span class="meta-tag">🏢 ${entry.client}</span>
-                        ${entry.academy ? `<span class="meta-tag">🎓 A${entry.academy}</span>` : ''}
-                        <span class="meta-tag">🏷️ ${entry.roleCategory}</span>
-                        ${entry.specialism ? `<span class="meta-tag">⚡ ${entry.specialism}</span>` : ''}
+                        <span class="meta-tag">${entry.client}</span>
+                        ${entry.academy ? `<span class="meta-tag">A${entry.academy}</span>` : ''}
+                        <span class="meta-tag">${entry.roleCategory}</span>
+                        ${entry.specialism ? `<span class="meta-tag">${entry.specialism}</span>` : ''}
                     </div>
                 </div>
             </div>`;
         }).join('');
     }
 
-    function openModal(index) {
-        const entry = allData[index];
-        document.getElementById('modal-issue').textContent = `Issue ${entry.issue} • ${entry.date}`;
-        document.getElementById('modal-name').textContent = entry.name;
-        document.getElementById('modal-role').textContent = `${entry.role} at ${entry.client}`;
+    function openModal(i) {
+        const e = allData[i];
+        document.getElementById('modal-issue').textContent = `Issue ${e.issue} · ${e.date}`;
+        document.getElementById('modal-name').textContent = e.name;
+        document.getElementById('modal-role').textContent = `${e.role} at ${e.client}`;
+        const pills = [];
+        if (e.academy) pills.push(`<span class="modal-meta-pill"><strong>Academy</strong>${e.academy}</span>`);
+        pills.push(`<span class="modal-meta-pill"><strong>Role</strong>${e.roleCategory}</span>`);
+        if (e.specialism) pills.push(`<span class="modal-meta-pill"><strong>Specialism</strong>${e.specialism}</span>`);
+        pills.push(`<span class="modal-meta-pill"><strong>Sector</strong>${e.sector}</span>`);
+        pills.push(`<span class="modal-meta-pill"><strong>Location</strong>${e.location}</span>`);
+        if (e.methodology) pills.push(`<span class="modal-meta-pill"><strong>Method</strong>${e.methodology}</span>`);
+        if (e.relocated) pills.push(`<span class="modal-meta-pill"><strong>📍</strong>${e.relocationDetails||'Relocated'}</span>`);
+        if (e.tools?.length) pills.push(`<span class="modal-meta-pill"><strong>Tools</strong>${e.tools.join(', ')}</span>`);
+        if (e.award) pills.push(`<span class="modal-meta-pill"><strong>🏆</strong>${e.award}</span>`);
+        document.getElementById('modal-meta').innerHTML = pills.join('');
 
-        // Build meta pills
-        const metaHtml = [];
-        if (entry.academy) metaHtml.push(`<span class="modal-meta-pill"><strong>Academy</strong> ${entry.academy}</span>`);
-        metaHtml.push(`<span class="modal-meta-pill"><strong>Role Type</strong> ${entry.roleCategory}</span>`);
-        if (entry.specialism) metaHtml.push(`<span class="modal-meta-pill"><strong>Specialism</strong> ${entry.specialism}</span>`);
-        metaHtml.push(`<span class="modal-meta-pill"><strong>Sector</strong> ${entry.sector}</span>`);
-        metaHtml.push(`<span class="modal-meta-pill"><strong>Location</strong> ${entry.location}</span>`);
-        if (entry.methodology) metaHtml.push(`<span class="modal-meta-pill"><strong>Methodology</strong> ${entry.methodology}</span>`);
-        if (entry.relocated) {
-            const reloc = entry.relocationDetails || 'Yes';
-            metaHtml.push(`<span class="modal-meta-pill"><strong>📍 Relocated</strong> ${reloc}</span>`);
-        }
-        if (entry.tools && entry.tools.length > 0) {
-            metaHtml.push(`<span class="modal-meta-pill"><strong>Tools</strong> ${entry.tools.join(', ')}</span>`);
-        }
-        if (entry.award) {
-            metaHtml.push(`<span class="modal-meta-pill"><strong>🏆 Award</strong> ${entry.award}</span>`);
-        }
-        document.getElementById('modal-meta').innerHTML = metaHtml.join('');
-
-        // Build images/PDFs viewer
-        const imagesContainer = document.getElementById('modal-images');
-        const files = entry.sourceFiles || [];
-
-        if (files.length === 0) {
-            imagesContainer.innerHTML = '<p style="color:var(--text-light);text-align:center;">No source files available for this entry.</p>';
-        } else {
-            imagesContainer.innerHTML = files.map((file, i) => {
-                const ext = file.split('.').pop().toLowerCase();
-                if (ext === 'png' || ext === 'jpg' || ext === 'jpeg') {
-                    return `
-                        <img src="${encodeURI(file)}" alt="${entry.name} - Page ${i + 1}" loading="lazy">
-                        ${files.length > 1 ? `<div class="page-label">Page ${i + 1} of ${files.length}</div>` : ''}
-                    `;
-                } else if (ext === 'pdf') {
-                    return `
-                        <iframe class="pdf-embed" src="${encodeURI(file)}" title="${entry.name} - Document ${i + 1}"></iframe>
-                        ${files.length > 1 ? `<div class="page-label">Document ${i + 1} of ${files.length}</div>` : ''}
-                    `;
-                } else if (ext === 'mp4') {
-                    return `
-                        <video controls style="width:100%;border-radius:12px;">
-                            <source src="${encodeURI(file)}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    `;
-                }
+        const img = document.getElementById('modal-images');
+        const files = e.sourceFiles || [];
+        if (!files.length) { img.innerHTML = '<p style="color:var(--text-light)">No source file available.</p>'; }
+        else {
+            img.innerHTML = files.map((f,idx) => {
+                const ext = f.split('.').pop().toLowerCase();
+                if (['png','jpg','jpeg'].includes(ext)) return `<img src="${encodeURI(f)}" alt="${e.name}" loading="lazy">${files.length>1?`<div class="page-label">Page ${idx+1} of ${files.length}</div>`:''}`;
+                if (ext==='pdf') return `<iframe class="pdf-embed" src="${encodeURI(f)}" title="${e.name}"></iframe>${files.length>1?`<div class="page-label">Doc ${idx+1} of ${files.length}</div>`:''}`;
+                if (ext==='mp4') return `<video controls style="width:100%;border-radius:10px"><source src="${encodeURI(f)}" type="video/mp4"></video>`;
                 return '';
             }).join('');
         }
-
         document.getElementById('modal-overlay').classList.add('active');
         document.body.style.overflow = 'hidden';
     }
@@ -487,30 +412,16 @@
         if (event && event.target !== document.getElementById('modal-overlay')) return;
         document.getElementById('modal-overlay').classList.remove('active');
         document.body.style.overflow = '';
-        // Stop any video playing
-        const videos = document.querySelectorAll('#modal-images video');
-        videos.forEach(v => v.pause());
+        document.querySelectorAll('#modal-images video').forEach(v => v.pause());
     }
 
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeModal();
-    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
     function clearFilters() {
-        document.getElementById('filter-search').value = '';
-        document.getElementById('filter-sector').value = '';
-        document.getElementById('filter-role-cat').value = '';
-        document.getElementById('filter-specialism').value = '';
-        document.getElementById('filter-client').value = '';
-        document.getElementById('filter-academy').value = '';
-        document.getElementById('filter-relocated').value = '';
-        document.getElementById('filter-location').value = '';
-        document.getElementById('filter-edition').value = '';
+        ['filter-search','filter-sector','filter-role-cat','filter-specialism','filter-client','filter-academy','filter-relocated','filter-location','filter-edition'].forEach(id => document.getElementById(id).value = '');
         applyFilters();
     }
 
-    // Initialize
     init();
     </script>
 </body>
