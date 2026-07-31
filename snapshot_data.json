@@ -26,8 +26,7 @@
       "pages": 2,
       "fileFormat": "png",
       "sourceFiles": [
-        "Issue 1/Academy Snapshot Issue 1 (1).png",
-        "Issue 1/Academy Snapshot Issue 1.png"
+        "Issue 1/Academy Snapshot Issue 1 (1).png"
       ],
       "roleCategory": "Dev",
       "specialism": "RPA"
@@ -156,8 +155,7 @@
       "pages": 2,
       "fileFormat": "png",
       "sourceFiles": [
-        "Issue 3/Academy Snapshot Issue3 (1).png",
-        "Issue 3/Academy Snapshot Issue3.png"
+        "Issue 3/Academy Snapshot Issue3 (1).png"
       ],
       "roleCategory": "Test",
       "specialism": "Manual / Functional"
@@ -185,9 +183,7 @@
       "pages": 3,
       "fileFormat": "png",
       "sourceFiles": [
-        "Issue 4/Academy Snapshot - Issue 4 (1).png",
-        "Issue 4/Academy Snapshot - Issue 4 (3).png",
-        "Issue 4/Academy Snapshot - Issue 4.png"
+        "Issue 4/Academy Snapshot - Issue 4 (1).png"
       ],
       "roleCategory": "Internal",
       "specialism": "Data"
@@ -258,8 +254,7 @@
       "pages": 2,
       "fileFormat": "png",
       "sourceFiles": [
-        "Issue 5/Academy Snapshot - Issue 5 (1).png",
-        "Issue 5/Academy Snapshot - Issue 5.png"
+        "Issue 5/Academy Snapshot - Issue 5 (1).png"
       ],
       "roleCategory": "Test",
       "specialism": "Automation"
@@ -441,8 +436,7 @@
       "pages": 2,
       "fileFormat": "png",
       "sourceFiles": [
-        "Issue 8/Academy Snapshot - Issue 8 (1).png",
-        "Issue 8/Academy Snapshot - Issue 8.png"
+        "Issue 8/Academy Snapshot - Issue 8 (1).png"
       ],
       "roleCategory": "Test",
       "specialism": "Manual / Functional"
@@ -716,9 +710,7 @@
       "pages": 3,
       "fileFormat": "png",
       "sourceFiles": [
-        "Issue 14/Academy Snapshot - Issue 14 (1).png",
-        "Issue 14/Academy Snapshot - Issue 14 (2).png",
-        "Issue 14/Academy Snapshot - Issue 14.png"
+        "Issue 14/Academy Snapshot - Issue 14 (1).png"
       ],
       "roleCategory": "Test",
       "specialism": "Manual / Functional"
@@ -799,8 +791,7 @@
       "pages": 2,
       "fileFormat": "png",
       "sourceFiles": [
-        "Issue 15/Academy Snapshot - Issue 15 (1).png",
-        "Issue 15/Academy Snapshot - Issue 15.png"
+        "Issue 15/Academy Snapshot - Issue 15 (1).png"
       ],
       "roleCategory": "Test",
       "specialism": "Data Migration"
@@ -906,9 +897,7 @@
       "pages": 3,
       "fileFormat": "png",
       "sourceFiles": [
-        "Issue 17/Academy Snapshot - Issue 17 (3) (1).png",
-        "Issue 17/Academy Snapshot - Issue 17 (3) (2).png",
-        "Issue 17/Academy Snapshot - Issue 17.png"
+        "Issue 17/Academy Snapshot - Issue 17 (3) (1).png"
       ],
       "roleCategory": "Test",
       "specialism": "Manual / Functional"
