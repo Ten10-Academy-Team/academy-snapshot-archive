@@ -2283,7 +2283,9 @@
       "sector": "Logistics/Postal",
       "editionType": "Christmas Edition",
       "fileFormat": "jpg",
-      "sourceFiles": []
+      "sourceFiles": [
+        "Issue 42 - Christmas Edition/Academy Snapshot - Issue 42 - Christopher.jpg"
+      ]
     },
     {
       "issue": 42,
@@ -2305,7 +2307,9 @@
       "sector": "Retail",
       "editionType": "Christmas Edition",
       "fileFormat": "jpg",
-      "sourceFiles": []
+      "sourceFiles": [
+        "Issue 42 - Christmas Edition/Academy Snapshot - Issue 42 - Rigshan.jpg"
+      ]
     },
     {
       "issue": 43,
