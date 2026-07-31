@@ -2944,6 +2944,55 @@
       "sourceFiles": [
         "Issue 60/unnamed.webp"
       ]
+    },
+    {
+      "issue": 61,
+      "date": "July 2026",
+      "name": "Alex Bavin",
+      "academy": 40,
+      "client": "NATS",
+      "role": "PMO Support/Process Improvement",
+      "roleCategory": "PM",
+      "specialism": "Project Delivery",
+      "tools": [
+        "Powerpacks",
+        "Project Reporting"
+      ],
+      "methodology": "Waterfall",
+      "location": "Office (Southampton)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Southampton",
+      "sector": "Aviation/Air Traffic Control",
+      "editionType": "Standard",
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 61/Scale Factory Academy Snapshot - Alex B (1).png"
+      ]
+    },
+    {
+      "issue": 61,
+      "date": "July 2026",
+      "name": "Dorcas Olugbebi",
+      "academy": 36,
+      "client": "Bank of England",
+      "role": "Test Automation Engineer",
+      "roleCategory": "Test",
+      "specialism": "Automation",
+      "tools": [
+        "Cucumber",
+        "Selenium",
+        "Java",
+        "Jira"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Banking/Financial",
+      "editionType": "Standard",
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 61/Scale Factory Academy Snapshot - Cas.png"
+      ]
     }
   ]
 }
