@@ -80,18 +80,13 @@ function filter(){
     render(res);
 }
 
-function openDoc(url){
-    window.open(url,'_blank','noopener');
-    return false;
-}
-
 function render(items){
     const g=document.getElementById('grid');
     if(!items.length){g.innerHTML='<div class="empty">No matches found</div>';return}
-    g.innerHTML=items.map(e=>{
+    g.innerHTML=items.map((e,idx)=>{
         const badge=e.rl?'<span class="badge badge-reloc">Relocated</span>':'';
         const href=e.f?BASE+encodeURI(e.f):BASE;
-        return `<a class="card" href="${href}" target="_blank" rel="noopener" onclick="return openDoc('${href}')">
+        return `<a class="card" href="${href}" target="_blank" rel="noopener" data-idx="${idx}">
 <div class="card-bar"></div>${badge}
 <div class="card-body">
 <div class="card-issue">Issue ${e.i} · ${e.d}</div>
