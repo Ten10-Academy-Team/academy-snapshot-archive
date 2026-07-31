@@ -51,7 +51,7 @@ if(!file){
     content.innerHTML='<div class="error">No document specified.</div>';
 } else {
     const ext=file.split('.').pop().toLowerCase();
-    if(['png','jpg','jpeg'].includes(ext)){
+    if(['png','jpg','jpeg','webp'].includes(ext)){
         const img=document.createElement('img');
         img.src=file;
         img.alt=name;

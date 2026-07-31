@@ -407,7 +407,7 @@
             files.forEach((f, idx) => {
                 const ext = f.split('.').pop().toLowerCase();
                 const src = encodeURI(f).replace(/#/g, '%23').replace(/\?/g, '%3F');
-                if (['png','jpg','jpeg'].includes(ext)) {
+                if (['png','jpg','jpeg','webp'].includes(ext)) {
                     const imgEl = document.createElement('img');
                     imgEl.src = src;
                     imgEl.alt = e.name;
