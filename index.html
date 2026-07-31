@@ -355,10 +355,11 @@
         const c = document.getElementById('cards-container');
         if (!entries.length) { c.innerHTML = '<div class="no-results"><p>No matches found.</p></div>'; return; }
         c.innerHTML = entries.map(entry => {
+            const idx = allData.indexOf(entry);
             const badge = entry.editionType && entry.editionType !== 'Standard'
                 ? `<div class="edition-badge">${entry.editionType}</div>`
                 : entry.relocated ? `<div class="relocated-badge">📍 Relocated</div>` : '';
-            return `<div class="card" onclick="openModal(${allData.indexOf(entry)})">
+            return `<div class="card" onclick="openModal(${idx})">
                 <div class="card-accent"></div>${badge}
                 <div class="card-body">
                     <div class="card-issue">Issue ${entry.issue} · ${entry.date}</div>
@@ -377,6 +378,7 @@
 
     function openModal(i) {
         const e = allData[i];
+        if (!e) return;
         document.getElementById('modal-issue').textContent = `Issue ${e.issue} · ${e.date}`;
         document.getElementById('modal-name').textContent = e.name;
         document.getElementById('modal-role').textContent = `${e.role} at ${e.client}`;
@@ -388,7 +390,7 @@
         pills.push(`<span class="modal-meta-pill"><strong>Location</strong>${e.location}</span>`);
         if (e.methodology) pills.push(`<span class="modal-meta-pill"><strong>Method</strong>${e.methodology}</span>`);
         if (e.relocated) pills.push(`<span class="modal-meta-pill"><strong>📍</strong>${e.relocationDetails||'Relocated'}</span>`);
-        if (e.tools?.length) pills.push(`<span class="modal-meta-pill"><strong>Tools</strong>${e.tools.join(', ')}</span>`);
+        if (e.tools && e.tools.length) pills.push(`<span class="modal-meta-pill"><strong>Tools</strong>${e.tools.join(', ')}</span>`);
         if (e.award) pills.push(`<span class="modal-meta-pill"><strong>🏆</strong>${e.award}</span>`);
         document.getElementById('modal-meta').innerHTML = pills.join('');
 
@@ -398,9 +400,10 @@
         else {
             img.innerHTML = files.map((f,idx) => {
                 const ext = f.split('.').pop().toLowerCase();
-                if (['png','jpg','jpeg'].includes(ext)) return `<img src="${encodeURI(f)}" alt="${e.name}" loading="lazy">${files.length>1?`<div class="page-label">Page ${idx+1} of ${files.length}</div>`:''}`;
-                if (ext==='pdf') return `<iframe class="pdf-embed" src="${encodeURI(f)}" title="${e.name}"></iframe>${files.length>1?`<div class="page-label">Doc ${idx+1} of ${files.length}</div>`:''}`;
-                if (ext==='mp4') return `<video controls style="width:100%;border-radius:10px"><source src="${encodeURI(f)}" type="video/mp4"></video>`;
+                const src = encodeURI(f).replace(/#/g, '%23').replace(/\?/g, '%3F');
+                if (['png','jpg','jpeg'].includes(ext)) return `<img src="${src}" alt="${e.name}" loading="lazy">${files.length>1?`<div class="page-label">Page ${idx+1} of ${files.length}</div>`:''}`;
+                if (ext==='pdf') return `<iframe class="pdf-embed" src="${src}" title="${e.name}"></iframe>${files.length>1?`<div class="page-label">Doc ${idx+1} of ${files.length}</div>`:''}`;
+                if (ext==='mp4') return `<video controls style="width:100%;border-radius:10px"><source src="${src}" type="video/mp4"></video>`;
                 return '';
             }).join('');
         }
