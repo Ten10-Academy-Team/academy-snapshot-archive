@@ -1,0 +1,3021 @@
+{
+  "publication": "Ten10 Academy Snapshot",
+  "description": "Monthly newsletter sharing what Ten10 Junior Consultants are working on",
+  "totalIssues": 39,
+  "dateRange": "July 2021 - November 2025",
+  "entries": [
+    {
+      "issue": 1,
+      "date": "July 2021",
+      "name": "Raheel Iqbal",
+      "academy": 16,
+      "client": "Maples Group",
+      "role": "RPA Bot Developer",
+      "speciality": "RPA/Automation",
+      "tools": [
+        "UiPath Studio",
+        "UiPath Orchestrator",
+        "VB.NET",
+        "C#"
+      ],
+      "methodology": "Agile (transitioned from Waterfall)",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Legal/Financial",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 1/Academy Snapshot Issue 1 (1).png",
+        "Issue 1/Academy Snapshot Issue 1.png"
+      ],
+      "roleCategory": "Dev",
+      "specialism": "RPA"
+    },
+    {
+      "issue": 1,
+      "date": "July 2021",
+      "name": "Imogen Roberts",
+      "academy": 19,
+      "client": "Historic England",
+      "role": "Accessibility Testing Specialist",
+      "speciality": "Accessibility Testing",
+      "tools": [
+        "Azure DevOps",
+        "Axe DevTools",
+        "WAVE",
+        "WCAG"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Public Sector/Heritage",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 1/Academy Snapshot Issue 1 (1).png",
+        "Issue 1/Academy Snapshot Issue 1.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Accessibility"
+    },
+    {
+      "issue": 2,
+      "date": "August 2021",
+      "name": "Lizzie Sparrowhawk",
+      "academy": 19,
+      "client": "Home Office",
+      "role": "Test Analyst",
+      "speciality": "Manual Testing",
+      "tools": [],
+      "methodology": "Agile",
+      "location": "Travel/On-site (Edinburgh, Manchester, London)",
+      "relocated": true,
+      "sector": "Government/Security",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 2/Academy Snapshot Issue 2 pg1.png",
+        "Issue 2/Academy Snapshot Issue 2 pg2.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional"
+    },
+    {
+      "issue": 2,
+      "date": "August 2021",
+      "name": "Shannon Beers",
+      "academy": 16,
+      "client": "Maples & Calder",
+      "role": "RPA Business Analyst",
+      "speciality": "Business Analysis/RPA",
+      "tools": [
+        "UiPath",
+        "OCR",
+        "Mendix",
+        "C#",
+        "API"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (client in Cayman Islands)",
+      "relocated": false,
+      "sector": "Legal/Financial",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 2/Academy Snapshot Issue 2 pg1.png",
+        "Issue 2/Academy Snapshot Issue 2 pg2.png"
+      ],
+      "roleCategory": "BA",
+      "specialism": "RPA"
+    },
+    {
+      "issue": 3,
+      "date": "September 2021",
+      "name": "Chloe Rudge",
+      "academy": 18,
+      "client": "Capgemini (Home Office)",
+      "role": "QA",
+      "speciality": "Automation Testing/Performance Testing",
+      "tools": [
+        "Gatling",
+        "API Testing",
+        "Acceptance Tests"
+      ],
+      "methodology": "Scrum/Agile",
+      "location": "Remote/Hybrid (Worthing office)",
+      "relocated": false,
+      "sector": "Government",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 3/Academy Snapshot Issue3 (1).png",
+        "Issue 3/Academy Snapshot Issue3.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Performance"
+    },
+    {
+      "issue": 3,
+      "date": "September 2021",
+      "name": "Shakeel Jiwani",
+      "academy": 20,
+      "client": "Slaughter & May",
+      "role": "QA",
+      "speciality": "Manual Testing",
+      "tools": [
+        "Jira",
+        "TestRail",
+        "Intapp"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (3 days office, 2 WFH)",
+      "relocated": false,
+      "sector": "Legal",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 3/Academy Snapshot Issue3 (1).png",
+        "Issue 3/Academy Snapshot Issue3.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional"
+    },
+    {
+      "issue": 4,
+      "date": "October 2021",
+      "name": "Sarita Rani Thumma",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Technical Trainer",
+      "speciality": "Training (Java, Python, Big Data, Databases)",
+      "tools": [
+        "Java",
+        "Python",
+        "Database",
+        "Big Data",
+        "Scripting"
+      ],
+      "methodology": null,
+      "location": "Office",
+      "relocated": false,
+      "sector": "Internal/Training",
+      "editionType": "Academy Team Edition",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 4/Academy Snapshot - Issue 4 (1).png",
+        "Issue 4/Academy Snapshot - Issue 4 (3).png",
+        "Issue 4/Academy Snapshot - Issue 4.png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Data"
+    },
+    {
+      "issue": 4,
+      "date": "October 2021",
+      "name": "Rebecca (Becca) Oxley",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Academy Talent Advisor",
+      "speciality": "Recruitment/Wellbeing",
+      "tools": [],
+      "methodology": null,
+      "location": "Leeds Office",
+      "relocated": false,
+      "sector": "Internal/Recruitment",
+      "editionType": "Academy Team Edition",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 4/Academy Snapshot - Issue 4 (1).png",
+        "Issue 4/Academy Snapshot - Issue 4 (3).png",
+        "Issue 4/Academy Snapshot - Issue 4.png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Wellbeing"
+    },
+    {
+      "issue": 4,
+      "date": "October 2021",
+      "name": "Craig Booth",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Trainer & Principle Consultant",
+      "speciality": "Test Management/Training",
+      "tools": [],
+      "methodology": null,
+      "location": "Office",
+      "relocated": false,
+      "sector": "Internal/Training",
+      "editionType": "Academy Team Edition",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 4/Academy Snapshot - Issue 4 (1).png",
+        "Issue 4/Academy Snapshot - Issue 4 (3).png",
+        "Issue 4/Academy Snapshot - Issue 4.png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Training"
+    },
+    {
+      "issue": 5,
+      "date": "November 2021",
+      "name": "Olivia (Livvy) Quickenden",
+      "academy": 20,
+      "client": "Hobbycraft",
+      "role": "Test Automation Engineer",
+      "speciality": "Test Automation",
+      "tools": [
+        "IntelliJ",
+        "Java",
+        "Jira",
+        "Selenium"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (WFH)",
+      "relocated": false,
+      "sector": "Retail",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 5/Academy Snapshot - Issue 5 (1).png",
+        "Issue 5/Academy Snapshot - Issue 5.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Automation"
+    },
+    {
+      "issue": 5,
+      "date": "November 2021",
+      "name": "Taran Takhar",
+      "academy": 19,
+      "client": "Slaughter & May",
+      "role": "QA Analyst",
+      "speciality": "Manual Testing/Functional Testing",
+      "tools": [
+        "Jira",
+        "TestRail",
+        "WorkOtter"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (3 days office)",
+      "relocated": false,
+      "sector": "Legal",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 5/Academy Snapshot - Issue 5 (1).png",
+        "Issue 5/Academy Snapshot - Issue 5.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional"
+    },
+    {
+      "issue": 6,
+      "date": "December 2021",
+      "name": "Kondwani Watkis",
+      "academy": 18,
+      "client": "Slaughter & May",
+      "role": "QA Analyst",
+      "speciality": "Functional Testing",
+      "tools": [
+        "Jira"
+      ],
+      "methodology": "Agile/Waterfall hybrid",
+      "location": "Hybrid (3 days office, 2 WFH)",
+      "relocated": true,
+      "relocationDetails": "Bristol to London",
+      "sector": "Legal",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 6/Academy Snapshot - Issue 6 (1).png",
+        "Issue 6/Academy Snapshot - Issue 6 (2).png",
+        "Issue 6/Academy Snapshot - Issue 6 (3).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional"
+    },
+    {
+      "issue": 6,
+      "date": "December 2021",
+      "name": "Lizzie Atkinson",
+      "academy": 19,
+      "client": "Flowbird Transport Intelligence",
+      "role": "Manual Tester",
+      "speciality": "Manual Testing/Payment Systems",
+      "tools": [
+        "TestRail",
+        "Jira",
+        "Cloudfare"
+      ],
+      "methodology": "Agile",
+      "location": "Office (Poole)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Poole",
+      "sector": "Transport/Payments",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 6/Academy Snapshot - Issue 6 (1).png",
+        "Issue 6/Academy Snapshot - Issue 6 (2).png",
+        "Issue 6/Academy Snapshot - Issue 6 (3).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Transport Systems"
+    },
+    {
+      "issue": 6,
+      "date": "December 2021",
+      "name": "Carl Thompson",
+      "academy": 19,
+      "client": "Opencast",
+      "role": "Junior Developer",
+      "speciality": "Software Development",
+      "tools": [
+        "JavaScript",
+        "AWS Lambda",
+        "Serverless",
+        "CI/CD"
+      ],
+      "methodology": "Scrum/TDD",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Technology/Government (HMRC)",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 6/Academy Snapshot - Issue 6 (1).png",
+        "Issue 6/Academy Snapshot - Issue 6 (2).png",
+        "Issue 6/Academy Snapshot - Issue 6 (3).png"
+      ],
+      "roleCategory": "Dev",
+      "specialism": "Software Development"
+    },
+    {
+      "issue": 7,
+      "date": "January 2022",
+      "name": "Dominic Middleton",
+      "academy": 20,
+      "client": "Competition and Markets Authority (CMA)",
+      "role": "Tester",
+      "speciality": "Manual Testing/Accessibility Testing",
+      "tools": [
+        "WAVE",
+        "NVDA"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (Sheffield)",
+      "relocated": false,
+      "sector": "Government/Regulatory",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 7/Academy Snapshot - Issue 6 (5).png",
+        "Issue 7/Academy Snapshot - Issue 6 (7).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Accessibility"
+    },
+    {
+      "issue": 7,
+      "date": "January 2022",
+      "name": "Amelia Nock",
+      "academy": 18,
+      "client": "Flowbird Transport Intelligence",
+      "role": "Manual Tester",
+      "speciality": "Manual Testing/ETMs",
+      "tools": [
+        "TestRail",
+        "Jira",
+        "CloudFare"
+      ],
+      "methodology": "Agile",
+      "location": "Office (Poole)",
+      "relocated": true,
+      "relocationDetails": "West Midlands to Poole",
+      "sector": "Transport/Payments",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 7/Academy Snapshot - Issue 6 (5).png",
+        "Issue 7/Academy Snapshot - Issue 6 (7).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional"
+    },
+    {
+      "issue": 8,
+      "date": "February 2022",
+      "name": "Ashok Gaston",
+      "academy": 19,
+      "client": "Flowbird Transport Intelligence",
+      "role": "QA/Tester",
+      "speciality": "Manual Testing/QA",
+      "tools": [
+        "TestRail"
+      ],
+      "methodology": "Agile",
+      "location": "Office (Poole)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Poole (near the sea)",
+      "sector": "Transport/Payments",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 8/Academy Snapshot - Issue 8 (1).png",
+        "Issue 8/Academy Snapshot - Issue 8.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional"
+    },
+    {
+      "issue": 8,
+      "date": "February 2022",
+      "name": "Nicholas Renier",
+      "academy": 20,
+      "client": "Arco",
+      "role": "Test Automation Engineer",
+      "speciality": "Test Automation",
+      "tools": [
+        "Selenium",
+        "Java",
+        "Cucumber",
+        "Postman"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (Glasgow)",
+      "relocated": false,
+      "sector": "Retail/E-commerce",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 8/Academy Snapshot - Issue 8 (1).png",
+        "Issue 8/Academy Snapshot - Issue 8.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Automation"
+    },
+    {
+      "issue": 9,
+      "date": "March 2022",
+      "name": "Olivia Armon",
+      "academy": 20,
+      "client": "Maples",
+      "role": "Business Analyst (RPA)",
+      "speciality": "Business Analysis/RPA",
+      "tools": [
+        "UiPath"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Legal/Financial",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 9/Academy Snapshot - Issue 9 (1).png",
+        "Issue 9/Academy Snapshot - Issue 9 (2).png"
+      ],
+      "roleCategory": "BA",
+      "specialism": "RPA"
+    },
+    {
+      "issue": 9,
+      "date": "March 2022",
+      "name": "Mark Bricklebank",
+      "academy": 20,
+      "client": "First Central Group",
+      "role": "Test Analyst",
+      "speciality": "Data Migration Testing",
+      "tools": [
+        "Azure DevOps",
+        "JSON",
+        "XML"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (Blackpool)",
+      "relocated": false,
+      "sector": "Insurance/Financial",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 9/Academy Snapshot - Issue 9 (1).png",
+        "Issue 9/Academy Snapshot - Issue 9 (2).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Data Migration"
+    },
+    {
+      "issue": 10,
+      "date": "April 2022",
+      "name": "Riya Gupta",
+      "academy": 21,
+      "client": "Opencast (DWP)",
+      "role": "Java Developer",
+      "speciality": "Software Development",
+      "tools": [
+        "Java",
+        "Scala",
+        "MongoDB",
+        "AWS",
+        "Python",
+        "PLAY Framework"
+      ],
+      "methodology": "Scrum/TDD",
+      "location": "Remote (Leeds office available)",
+      "relocated": false,
+      "sector": "Government (DWP)",
+      "editionType": "Standard",
+      "pages": 1,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 10/Academy Snapshot - Issue 10 (1) (1).png"
+      ],
+      "roleCategory": "Dev",
+      "specialism": "Software Development"
+    },
+    {
+      "issue": 11,
+      "date": "May 2022",
+      "name": "Megan Oldridge",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Academy Wellbeing Advisor",
+      "speciality": "Wellbeing/HR",
+      "tools": [],
+      "methodology": null,
+      "location": "Leeds Office",
+      "relocated": false,
+      "sector": "Internal/Wellbeing",
+      "editionType": "Standard",
+      "pages": 1,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 11/Academy Snapshot - Issue 11 (10) (1).png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Wellbeing"
+    },
+    {
+      "issue": 12,
+      "date": "June 2022",
+      "name": "Thomas Jameson",
+      "academy": 20,
+      "client": "First Central Group",
+      "role": "Test Analyst",
+      "speciality": "ETL Testing/Data Testing",
+      "tools": [
+        "SQL",
+        "Azure",
+        "Azure DevOps"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (Sunderland)",
+      "relocated": false,
+      "sector": "Insurance/Financial",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 12/Academy Snapshot - Issue 11 (1) (2).png",
+        "Issue 12/Academy Snapshot - Issue 11 (2) (1).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Data Migration"
+    },
+    {
+      "issue": 12,
+      "date": "June 2022",
+      "name": "Benjamin Kerridge",
+      "academy": 20,
+      "client": "MO (Ministry of Defence)",
+      "role": "Business Analyst",
+      "speciality": "Business Analysis/ITSM",
+      "tools": [
+        "Visio",
+        "ITIL"
+      ],
+      "methodology": "Agile",
+      "location": "London (hoping to travel to Bristol & Edinburgh)",
+      "relocated": false,
+      "sector": "Government/Defence",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 12/Academy Snapshot - Issue 11 (1) (2).png",
+        "Issue 12/Academy Snapshot - Issue 11 (2) (1).png"
+      ],
+      "roleCategory": "BA",
+      "specialism": "Business Analysis"
+    },
+    {
+      "issue": 13,
+      "date": "July 2022",
+      "name": "Jamie Mann",
+      "academy": 21,
+      "client": "Equiniti",
+      "role": "Implementation Analyst",
+      "speciality": "Letter Digitalisation",
+      "tools": [
+        "Compendia"
+      ],
+      "methodology": "Scrum/Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Financial/Pensions",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 13/Academy Snapshot - Jamie (1).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "System Configuration"
+    },
+    {
+      "issue": 13,
+      "date": "July 2022",
+      "name": "Lana Aldridge",
+      "academy": 21,
+      "client": "Equiniti",
+      "role": "System Tester",
+      "speciality": "Manual Functional Testing",
+      "tools": [
+        "Outreach",
+        "Jira"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (London)",
+      "relocated": false,
+      "sector": "Financial/Pensions",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 13/Academy Snapshot - Lana (1).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional"
+    },
+    {
+      "issue": 13,
+      "date": "July 2022",
+      "name": "Matt McCormick",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Technical Trainer",
+      "speciality": "Automated Testing/Training",
+      "tools": [],
+      "methodology": null,
+      "location": "Office",
+      "relocated": false,
+      "sector": "Internal/Training",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 13/Academy Snapshot - Matt (1).png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Automation"
+    },
+    {
+      "issue": 14,
+      "date": "August 2022",
+      "name": "Callum Christie",
+      "academy": 22,
+      "client": "Arco",
+      "role": "Functional Tester",
+      "speciality": "Functional Testing/E-commerce",
+      "tools": [
+        "Jira"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (monthly office visits)",
+      "relocated": false,
+      "sector": "Retail/E-commerce",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 14/Academy Snapshot - Issue 14 (1).png",
+        "Issue 14/Academy Snapshot - Issue 14 (2).png",
+        "Issue 14/Academy Snapshot - Issue 14.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional"
+    },
+    {
+      "issue": 14,
+      "date": "August 2022",
+      "name": "Tom Parker",
+      "academy": 20,
+      "client": "Historic England",
+      "role": "Automation Test Engineer",
+      "speciality": "Test Automation/Accessibility Testing",
+      "tools": [
+        "C#",
+        "Specflow",
+        "BDD",
+        "Selenium-Axe"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Public Sector/Heritage",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 14/Academy Snapshot - Issue 14 (1).png",
+        "Issue 14/Academy Snapshot - Issue 14 (2).png",
+        "Issue 14/Academy Snapshot - Issue 14.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Accessibility"
+    },
+    {
+      "issue": 14,
+      "date": "August 2022",
+      "name": "Daniel Jakus",
+      "academy": 21,
+      "client": "Unum",
+      "role": "Test Automation Engineer",
+      "speciality": "Test Automation",
+      "tools": [
+        "C#",
+        "Visual Studio",
+        "SQL"
+      ],
+      "methodology": "Scrum",
+      "location": "Hybrid (2 days office)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Guildford (near Dorking office)",
+      "sector": "Insurance/Financial",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 14/Academy Snapshot - Issue 14 (1).png",
+        "Issue 14/Academy Snapshot - Issue 14 (2).png",
+        "Issue 14/Academy Snapshot - Issue 14.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Automation"
+    },
+    {
+      "issue": 15,
+      "date": "September 2022",
+      "name": "Jon Williams",
+      "academy": 20,
+      "client": "First Central",
+      "role": "Data Tester",
+      "speciality": "Data Migration Testing",
+      "tools": [
+        "SQL",
+        "Azure DevOps",
+        "JSON",
+        "Synapse"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (uses Leeds Ten10 office)",
+      "relocated": false,
+      "sector": "Insurance/Financial",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 15/Academy Snapshot - Issue 15 (1).png",
+        "Issue 15/Academy Snapshot - Issue 15.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Data Migration"
+    },
+    {
+      "issue": 15,
+      "date": "September 2022",
+      "name": "Teresa Lima",
+      "academy": 21,
+      "client": "First Central Group",
+      "role": "Data Tester",
+      "speciality": "Data Testing/SQL/PowerBI",
+      "tools": [
+        "SQL",
+        "PowerBI",
+        "Azure"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Insurance/Financial",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 15/Academy Snapshot - Issue 15 (1).png",
+        "Issue 15/Academy Snapshot - Issue 15.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Data"
+    },
+    {
+      "issue": 16,
+      "date": "October 2022",
+      "name": "Sam Magee",
+      "academy": 21,
+      "client": "Equiniti",
+      "role": "Implementation Analyst",
+      "speciality": "Reporting/SQL",
+      "tools": [
+        "Compendia",
+        "SQL"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Financial/Pensions",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 16/Academy Snapshot - Issue 16 (1) (1).png",
+        "Issue 16/Academy Snapshot - Issue 16 (2).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "System Configuration"
+    },
+    {
+      "issue": 16,
+      "date": "October 2022",
+      "name": "Charlie Jones",
+      "academy": 21,
+      "client": "First Central Group (FCG)",
+      "role": "Tester",
+      "speciality": "Data Testing/PowerBI",
+      "tools": [
+        "SQL",
+        "Power BI",
+        "VM"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": true,
+      "relocationDetails": "Relocated to Haywards Heath (near Brighton)",
+      "sector": "Insurance/Financial",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 16/Academy Snapshot - Issue 16 (1) (1).png",
+        "Issue 16/Academy Snapshot - Issue 16 (2).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Data"
+    },
+    {
+      "issue": 17,
+      "date": "November 2022",
+      "name": "Edward Everett",
+      "academy": 21,
+      "client": "IPF",
+      "role": "Tester",
+      "speciality": "Manual Testing/Backend Testing",
+      "tools": [
+        "Jira",
+        "SQL",
+        "MySQL",
+        "Postman",
+        "AWS"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (Leeds, Thursdays in office)",
+      "relocated": false,
+      "sector": "Financial/Fintech",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 17/Academy Snapshot - Issue 17 (3) (1).png",
+        "Issue 17/Academy Snapshot - Issue 17 (3) (2).png",
+        "Issue 17/Academy Snapshot - Issue 17.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional"
+    },
+    {
+      "issue": 17,
+      "date": "November 2022",
+      "name": "Caprice Thompson",
+      "academy": 21,
+      "client": "Graphnet",
+      "role": "Automation Tester",
+      "speciality": "Test Automation/API Testing",
+      "tools": [
+        "C#",
+        ".NET",
+        "Jira",
+        "Postman",
+        "Azure DevOps",
+        "Selenium"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Healthcare",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 17/Academy Snapshot - Issue 17 (3) (1).png",
+        "Issue 17/Academy Snapshot - Issue 17 (3) (2).png",
+        "Issue 17/Academy Snapshot - Issue 17.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Automation"
+    },
+    {
+      "issue": 17,
+      "date": "November 2022",
+      "name": "Courtney Kerr",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Academy Talent Advisor",
+      "speciality": "Recruitment",
+      "tools": [],
+      "methodology": null,
+      "location": "Leeds Office",
+      "relocated": false,
+      "sector": "Internal/Recruitment",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 17/Academy Snapshot - Issue 17 (3) (1).png",
+        "Issue 17/Academy Snapshot - Issue 17 (3) (2).png",
+        "Issue 17/Academy Snapshot - Issue 17.png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Recruitment"
+    },
+    {
+      "issue": 18,
+      "date": "December 2022",
+      "name": "Alex Kedge",
+      "academy": 21,
+      "client": "Viking (Office Depot)",
+      "role": "Back-End Software Engineer",
+      "speciality": "Software Development/Microservices",
+      "tools": [
+        "Java",
+        "REST API",
+        "Kafka",
+        "Oracle",
+        "MongoDB",
+        "Scrum"
+      ],
+      "methodology": "Scrum",
+      "location": "Hybrid (3 days office, Milton Keynes)",
+      "relocated": false,
+      "sector": "Retail/E-commerce",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 18/Academy Snapshot - Issue 18 (1) (2).png",
+        "Issue 18/Academy Snapshot - Issue 18 (2) (2).png",
+        "Issue 18/Academy Snapshot - Issue 18 (3) (2).png"
+      ],
+      "roleCategory": "Dev",
+      "specialism": "Back-End"
+    },
+    {
+      "issue": 18,
+      "date": "December 2022",
+      "name": "Omar Sufian",
+      "academy": 21,
+      "client": "Equiniti",
+      "role": "Implementation Analyst",
+      "speciality": "Testing/Workflows/Letters",
+      "tools": [
+        "Compendia"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (visited Crawley and Leeds offices)",
+      "relocated": false,
+      "sector": "Financial/Pensions",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 18/Academy Snapshot - Issue 18 (1) (2).png",
+        "Issue 18/Academy Snapshot - Issue 18 (2) (2).png",
+        "Issue 18/Academy Snapshot - Issue 18 (3) (2).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "System Configuration"
+    },
+    {
+      "issue": 18,
+      "date": "December 2022",
+      "name": "Mark Bricklebank",
+      "academy": 20,
+      "client": "Flowbird Transport Intelligence",
+      "role": "System Test Analyst",
+      "speciality": "System Testing/Transport",
+      "tools": [
+        "TestRail",
+        "Jira",
+        "CloudFare"
+      ],
+      "methodology": "Agile",
+      "location": "On-site (Poole)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Poole area",
+      "sector": "Transport/Payments",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 18/Academy Snapshot - Issue 18 (1) (2).png",
+        "Issue 18/Academy Snapshot - Issue 18 (2) (2).png",
+        "Issue 18/Academy Snapshot - Issue 18 (3) (2).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Transport Systems"
+    },
+    {
+      "issue": 20,
+      "date": "February 2023",
+      "name": "Rob Peters",
+      "academy": 22,
+      "client": "Ten10 DTL (Internal)",
+      "role": "Accessibility/Compatibility Tester",
+      "speciality": "Accessibility Testing",
+      "tools": [
+        "WAVE",
+        "NVDA",
+        "Colour Contrast Checkers"
+      ],
+      "methodology": "Independent",
+      "location": "Remote (Leeds)",
+      "relocated": false,
+      "sector": "Internal/Consulting",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 20/Academy Snapshot - Issue 20 (1) (1).png",
+        "Issue 20/Academy Snapshot - Issue 20 (2) (1).png",
+        "Issue 20/Academy Snapshot - Issue 20 (3) (1).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Accessibility"
+    },
+    {
+      "issue": 20,
+      "date": "February 2023",
+      "name": "Erica Figueiredo",
+      "academy": 24,
+      "client": "Hobbycraft",
+      "role": "Test Analyst",
+      "speciality": "Mobile Testing",
+      "tools": [
+        "Jira",
+        "InVision"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Retail",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 20/Academy Snapshot - Issue 20 (1) (1).png",
+        "Issue 20/Academy Snapshot - Issue 20 (2) (1).png",
+        "Issue 20/Academy Snapshot - Issue 20 (3) (1).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Mobile"
+    },
+    {
+      "issue": 20,
+      "date": "February 2023",
+      "name": "Kieron Dodd",
+      "academy": 12,
+      "client": "Ten10 (Internal)",
+      "role": "Academy Trainer",
+      "speciality": "Business Analysis/Training",
+      "tools": [],
+      "methodology": null,
+      "location": "Office",
+      "relocated": false,
+      "sector": "Internal/Training",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 20/Academy Snapshot - Issue 20 (1) (1).png",
+        "Issue 20/Academy Snapshot - Issue 20 (2) (1).png",
+        "Issue 20/Academy Snapshot - Issue 20 (3) (1).png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Training"
+    },
+    {
+      "issue": 21,
+      "date": "March 2023",
+      "name": "Jeet Dandy",
+      "academy": 22,
+      "client": "Dunelm",
+      "role": "SDET",
+      "speciality": "RPA/Test Automation",
+      "tools": [
+        "UIPath",
+        "SAP",
+        "Jira",
+        "Git"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Retail",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 21/Academy Snapshot - Issue 21 (1) (1).png",
+        "Issue 21/Academy Snapshot - Issue 21 (2) (1).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "RPA"
+    },
+    {
+      "issue": 21,
+      "date": "March 2023",
+      "name": "Stuart Wright",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Academy Wellbeing Advisor",
+      "speciality": "Wellbeing/People",
+      "tools": [],
+      "methodology": null,
+      "location": "Leeds Office",
+      "relocated": false,
+      "sector": "Internal/Wellbeing",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 21/Academy Snapshot - Issue 21 (1) (1).png",
+        "Issue 21/Academy Snapshot - Issue 21 (2) (1).png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Wellbeing"
+    },
+    {
+      "issue": 22,
+      "date": "April 2023",
+      "name": "Hannah Ellis",
+      "academy": 23,
+      "client": "Opencast",
+      "role": "Developer",
+      "speciality": "Front-End Development",
+      "tools": [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "Docker",
+        "Jest",
+        "Java",
+        "Selenium",
+        "Git",
+        "GitLab"
+      ],
+      "methodology": "Waterfall (with Agile elements)",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Government/Public Sector",
+      "editionType": "Standard",
+      "pages": 1,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 22/Academy Snapshot - Issue 22 (1).png"
+      ],
+      "roleCategory": "Dev",
+      "specialism": "Front-End"
+    },
+    {
+      "issue": 23,
+      "date": "May 2023",
+      "name": "Sarah Teague",
+      "academy": 20,
+      "client": "Burberry",
+      "role": "Test Analyst",
+      "speciality": "POS Testing/Retail QA",
+      "tools": [
+        "Jira",
+        "Zephyr",
+        "Automation Testing"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (Leeds office 2+ days)",
+      "relocated": false,
+      "sector": "Retail/Luxury",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 23/Academy Snapshot - Issue 23 (1).png",
+        "Issue 23/Academy Snapshot - Issue 23 (2).png",
+        "Issue 23/Academy Snapshot - Issue 23 (3).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Retail Systems"
+    },
+    {
+      "issue": 23,
+      "date": "May 2023",
+      "name": "Christopher Sallis",
+      "academy": 23,
+      "client": "Historic England",
+      "role": "Test Analyst",
+      "speciality": "Manual Testing/Performance Testing/Accessibility",
+      "tools": [
+        "Azure DevOps"
+      ],
+      "methodology": "Agile (with some Waterfall)",
+      "location": "Remote (some London meetings)",
+      "relocated": false,
+      "sector": "Public Sector/Heritage",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 23/Academy Snapshot - Issue 23 (1).png",
+        "Issue 23/Academy Snapshot - Issue 23 (2).png",
+        "Issue 23/Academy Snapshot - Issue 23 (3).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Accessibility"
+    },
+    {
+      "issue": 23,
+      "date": "May 2023",
+      "name": "Maciek Lazenski",
+      "academy": 22,
+      "client": "Dunelm",
+      "role": "QE (Quality Engineer)",
+      "speciality": "Quality Engineering/Delivery Promise",
+      "tools": [
+        "AWS",
+        "Insomnia",
+        "SAP",
+        "Jira"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Retail",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 23/Academy Snapshot - Issue 23 (1).png",
+        "Issue 23/Academy Snapshot - Issue 23 (2).png",
+        "Issue 23/Academy Snapshot - Issue 23 (3).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Project Delivery"
+    },
+    {
+      "issue": 24,
+      "date": "June 2023",
+      "name": "Mujahid Khan",
+      "academy": 22,
+      "client": "Equiniti",
+      "role": "Implementation Analyst",
+      "speciality": "Workflow Configuration/SQL",
+      "tools": [
+        "SQL",
+        "Compendia"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Financial/Pensions",
+      "editionType": "Standard",
+      "pages": 1,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 24/Academy Snapshot - Issue 24 (1).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "System Configuration"
+    },
+    {
+      "issue": 25,
+      "date": "July 2023",
+      "name": "Thomas Hallam",
+      "academy": 26,
+      "client": "Arcadis",
+      "role": "Sustainability Consultant/Data Analyst",
+      "speciality": "Data Analytics/Automation/Sustainability",
+      "tools": [
+        "Power BI",
+        "Python",
+        "Power Automate",
+        "SharePoint"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (one office/client visit)",
+      "relocated": false,
+      "sector": "Engineering/Infrastructure (HS2)",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 25/Academy Snapshot - Issue 25 (1).png",
+        "Issue 25/Academy Snapshot - Issue 25 (2).png"
+      ],
+      "roleCategory": "Data",
+      "specialism": "Automation"
+    },
+    {
+      "issue": 25,
+      "date": "July 2023",
+      "name": "Georgi Karabadzhakov",
+      "academy": 23,
+      "client": "Specsavers",
+      "role": "QA Analyst/Automation",
+      "speciality": "Manual Testing/Test Automation",
+      "tools": [
+        "qTest",
+        "Selenium",
+        "Java",
+        "Azure Pipelines"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (office once a week, Whiteley)",
+      "relocated": true,
+      "relocationDetails": "Relocated near Whiteley",
+      "sector": "Retail/Healthcare",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 25/Academy Snapshot - Issue 25 (1).png",
+        "Issue 25/Academy Snapshot - Issue 25 (2).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Automation"
+    },
+    {
+      "issue": 26,
+      "date": "August 2023",
+      "name": "Leonard Sawyer",
+      "academy": 26,
+      "client": "Rabobank",
+      "role": "Operations Engineer",
+      "speciality": "DevOps/Operations",
+      "tools": [
+        "Azure DevOps",
+        "CMDB",
+        "Archer",
+        "IAM"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (3 days home, 2 office)",
+      "relocated": false,
+      "sector": "Banking/Financial",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 26/Academy Snapshot - Issue 26 (1) (1).png",
+        "Issue 26/Academy Snapshot - Issue 26 (2) (1).png"
+      ],
+      "roleCategory": "DevOps",
+      "specialism": "Operations"
+    },
+    {
+      "issue": 26,
+      "date": "August 2023",
+      "name": "Dyllan Arulampalam",
+      "academy": 23,
+      "client": "Ten10 (Internal PMO)",
+      "role": "PMO Analyst",
+      "speciality": "Project Management/Data Management",
+      "tools": [
+        "Excel",
+        "OpenAir"
+      ],
+      "methodology": "Agile",
+      "location": "Leeds Office",
+      "relocated": true,
+      "relocationDetails": "Relocated to Leeds",
+      "sector": "Internal/PMO",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 26/Academy Snapshot - Issue 26 (1) (1).png",
+        "Issue 26/Academy Snapshot - Issue 26 (2) (1).png"
+      ],
+      "roleCategory": "PM",
+      "specialism": "Operations"
+    },
+    {
+      "issue": 27,
+      "date": "September 2023",
+      "name": "Ali Turk",
+      "academy": 26,
+      "client": "Dunelm",
+      "role": "Performance Engineer",
+      "speciality": "Performance Testing/Automation",
+      "tools": [
+        "Gitlab CI/CD",
+        "AWS",
+        "Datadog",
+        "TypeScript",
+        "Postman",
+        "Jira"
+      ],
+      "methodology": "Kanban/Scrum",
+      "location": "Hybrid (London office)",
+      "relocated": false,
+      "sector": "Retail",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 27/Academy Snapshot - Issue 27 (1) (1).png",
+        "Issue 27/Academy Snapshot - Issue 27 (2) (1).png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Performance"
+    },
+    {
+      "issue": 27,
+      "date": "September 2023",
+      "name": "Selwyn Njini",
+      "academy": 26,
+      "client": "Ecclesiastical Insurance (Benefact Group)",
+      "role": "Group PMO Analyst",
+      "speciality": "Project Management/Data Analysis",
+      "tools": [
+        "Excel",
+        "Power Query",
+        "Power BI",
+        "SQL"
+      ],
+      "methodology": "Mixed",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Insurance/Financial/Charity",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 27/Academy Snapshot - Issue 27 (1) (1).png",
+        "Issue 27/Academy Snapshot - Issue 27 (2) (1).png"
+      ],
+      "roleCategory": "PM",
+      "specialism": "Data"
+    },
+    {
+      "issue": 28,
+      "date": "October 2023",
+      "name": "Sophie Dezso",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Academy Wellbeing Advisor",
+      "speciality": "Wellbeing/Psychology",
+      "tools": [],
+      "methodology": null,
+      "location": "Office",
+      "relocated": false,
+      "sector": "Internal/Wellbeing",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 28/Academy Snapshot - Issue 28 (1).png",
+        "Issue 28/Academy Snapshot - Issue 28 (2).png",
+        "Issue 28/Academy Snapshot - Issue 28 (3).png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Wellbeing"
+    },
+    {
+      "issue": 28,
+      "date": "October 2023",
+      "name": "Rigshan Prabakaran",
+      "academy": 27,
+      "client": "The Perfume Shop",
+      "role": "Graduate Junior Project Manager",
+      "speciality": "Project Management",
+      "tools": [
+        "Excel",
+        "Prince2"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (including Milan visits)",
+      "relocated": false,
+      "sector": "Retail",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 28/Academy Snapshot - Issue 28 (1).png",
+        "Issue 28/Academy Snapshot - Issue 28 (2).png",
+        "Issue 28/Academy Snapshot - Issue 28 (3).png"
+      ],
+      "roleCategory": "PM",
+      "specialism": "Project Delivery"
+    },
+    {
+      "issue": 28,
+      "date": "October 2023",
+      "name": "Ishara Badoreea",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Academy Operations Manager",
+      "speciality": "Operations/Recruitment",
+      "tools": [],
+      "methodology": null,
+      "location": "Office",
+      "relocated": false,
+      "sector": "Internal/Operations",
+      "editionType": "Standard",
+      "pages": 3,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 28/Academy Snapshot - Issue 28 (1).png",
+        "Issue 28/Academy Snapshot - Issue 28 (2).png",
+        "Issue 28/Academy Snapshot - Issue 28 (3).png"
+      ],
+      "roleCategory": "Internal",
+      "specialism": "Recruitment"
+    },
+    {
+      "issue": 29,
+      "date": "November 2023",
+      "name": "Zahrah Mahmood",
+      "academy": 26,
+      "client": "ITV",
+      "role": "Agile Delivery Manager",
+      "speciality": "Agile Delivery/Project Management",
+      "tools": [
+        "Planet V platform"
+      ],
+      "methodology": "Agile/Scrum",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Media/Advertising",
+      "editionType": "Standard",
+      "pages": 1,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 29/Academy Snapshot - Issue 29.png"
+      ],
+      "roleCategory": "PM",
+      "specialism": "Project Delivery"
+    },
+    {
+      "issue": 33,
+      "date": "March 2024",
+      "name": "Anissa Nelson",
+      "academy": 25,
+      "client": "Public Sector",
+      "role": "Business Support/Process Improvement",
+      "speciality": "Business Analysis/Process Improvement",
+      "tools": [
+        "Jira",
+        "Confluence",
+        "VBA",
+        "Macros"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Public Sector",
+      "editionType": "Easter Edition",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 33 - Easter Edition/Academy Snapshot - Issue 33 Anissa Nelson.png"
+      ],
+      "roleCategory": "BA",
+      "specialism": "Process Improvement"
+    },
+    {
+      "issue": 33,
+      "date": "March 2024",
+      "name": "Rob Starling",
+      "academy": 31,
+      "client": "Epicor",
+      "role": "Associate Project Manager",
+      "speciality": "Project Management",
+      "tools": [
+        "Excel",
+        "PRINCE2"
+      ],
+      "methodology": "PRINCE2",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Technology/Enterprise Software",
+      "editionType": "Easter Edition",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 33 - Easter Edition/Academy Snapshot - Issue 33 Rob Starling.png"
+      ],
+      "roleCategory": "PM",
+      "specialism": "Project Delivery"
+    },
+    {
+      "issue": 34,
+      "date": "April 2024",
+      "name": "Anca Savu",
+      "academy": 30,
+      "client": "Leicestershire County Council",
+      "role": "Business Analyst",
+      "speciality": "Business Analysis/Process Improvement",
+      "tools": [
+        "Process Mapping"
+      ],
+      "methodology": "Neither purely Agile nor Waterfall",
+      "location": "Hybrid",
+      "relocated": true,
+      "relocationDetails": "Relocated to Leicester",
+      "sector": "Public Sector/Local Government",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 34/Academy Snapshot - Issue 34 Anca Savu.png"
+      ],
+      "roleCategory": "BA",
+      "specialism": "Process Improvement"
+    },
+    {
+      "issue": 34,
+      "date": "April 2024",
+      "name": "Kyle Santiago",
+      "academy": 31,
+      "client": "NATS",
+      "role": "Integration and Verification Engineer",
+      "speciality": "Test Engineering/Aviation",
+      "tools": [
+        "Jira"
+      ],
+      "methodology": "Agile",
+      "location": "Office (3-4 days/week)",
+      "relocated": false,
+      "relocationDetails": "Planning to relocate nearer office (commuting M3/M27)",
+      "sector": "Aviation/Air Traffic Control",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 34/Academy Snapshot - Issue 34 Kyle Santiago.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Aviation Systems"
+    },
+    {
+      "issue": 35,
+      "date": "May 2024",
+      "name": "Gregg Hobson",
+      "academy": 24,
+      "client": "Arcadis",
+      "role": "Project Manager/Business Analyst",
+      "speciality": "Project Management/Business Analysis",
+      "tools": [
+        "Process Automation"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Engineering/Infrastructure (Railway)",
+      "editionType": "Ten10 Award Winners Edition",
+      "pages": 2,
+      "fileFormat": "png",
+      "award": "CEO Person of the Year",
+      "sourceFiles": [
+        "Issue 35 - Ten10 Award Winners Edition/Academy Snapshot - Issue 35 Gregg Hobson.png"
+      ],
+      "roleCategory": "PM",
+      "specialism": "Project Delivery"
+    },
+    {
+      "issue": 35,
+      "date": "May 2024",
+      "name": "Phoebe Rawlings",
+      "academy": 25,
+      "client": "EDF Energy",
+      "role": "Vulnerability Analyst",
+      "speciality": "Cyber Security",
+      "tools": [
+        "Vulnerability Scanner",
+        "InfoSec tools"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (office in Gloucester, events in London)",
+      "relocated": false,
+      "sector": "Energy/Utilities",
+      "editionType": "Ten10 Award Winners Edition",
+      "pages": 2,
+      "fileFormat": "png",
+      "award": "Junior Consultant of the Year",
+      "sourceFiles": [
+        "Issue 35 - Ten10 Award Winners Edition/Academy Snapshot - Issue 35 Phoebe.png"
+      ],
+      "roleCategory": "Security",
+      "specialism": "Cyber Security"
+    },
+    {
+      "issue": 36,
+      "date": "June 2024",
+      "name": "Alys Baker",
+      "academy": 29,
+      "client": "NATS",
+      "role": "Test Engineer",
+      "speciality": "Manual Testing/Test Automation",
+      "tools": [
+        "Excel (low-code automation)"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (2-3 days office)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Portsmouth",
+      "sector": "Aviation/Air Traffic Control",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 36/_Academy Snapshot - Issue 36 Alys Baker.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Automation"
+    },
+    {
+      "issue": 36,
+      "date": "June 2024",
+      "name": "Mohammed Momin",
+      "academy": 30,
+      "client": "NCA (National Crime Agency)",
+      "role": "Service Desk Analyst",
+      "speciality": "Service Desk/UAT",
+      "tools": [
+        "Remedy"
+      ],
+      "methodology": "Agile",
+      "location": "Office",
+      "relocated": false,
+      "sector": "Government/Law Enforcement",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 36/_Academy Snapshot - Issue 36 Mo Momin.png"
+      ],
+      "roleCategory": "Service Desk",
+      "specialism": "Service Desk"
+    },
+    {
+      "issue": 37,
+      "date": "July 2024",
+      "name": "Kayleigh Szombara",
+      "academy": 27,
+      "client": "EDF",
+      "role": "Junior VR Engineer/Digital Developer",
+      "speciality": "VR Development/Digital Media",
+      "tools": [
+        "VR tools",
+        "Animation software",
+        "Game creation tools"
+      ],
+      "methodology": "Self-managed/Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Energy/Utilities",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 37/Academy Snapshot - Issue 37 Kayleigh.png"
+      ],
+      "roleCategory": "Dev",
+      "specialism": "VR / Digital"
+    },
+    {
+      "issue": 37,
+      "date": "July 2024",
+      "name": "Rochelle Barnor",
+      "academy": 30,
+      "client": "NCA (National Crime Agency)",
+      "role": "Service Desk Analyst",
+      "speciality": "Service Desk/Incident Management",
+      "tools": [
+        "Remedy",
+        "Android",
+        "Blackberry"
+      ],
+      "methodology": "Agile",
+      "location": "Office (Leicester)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Leicester",
+      "sector": "Government/Law Enforcement",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 37/Academy Snapshot - Issue 37 Rochelle Barnor.png"
+      ],
+      "roleCategory": "Service Desk",
+      "specialism": "Service Desk"
+    },
+    {
+      "issue": 38,
+      "date": "August 2024",
+      "name": "Cati Davies",
+      "academy": 25,
+      "client": "BAE Systems",
+      "role": "Data Analyst/Server Admin",
+      "speciality": "Data Visualisation/Server Administration",
+      "tools": [
+        "Tableau Desktop",
+        "Tableau Server"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Defence",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 38/Academy Snapshot -  Cati Davis (Issue 38) .png"
+      ],
+      "roleCategory": "Data",
+      "specialism": "Data Visualisation"
+    },
+    {
+      "issue": 38,
+      "date": "August 2024",
+      "name": "Hashan Sugunanandarajah",
+      "academy": 31,
+      "client": "Croda",
+      "role": "Junior Project Manager",
+      "speciality": "Project Management/Digital Transformation",
+      "tools": [
+        "Smartsheet",
+        "SAP C4C",
+        "Sinch"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Manufacturing/Chemicals",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 38/Academy Snapshot - Hashan Sugu (Issue 38).png"
+      ],
+      "roleCategory": "PM",
+      "specialism": "Project Delivery"
+    },
+    {
+      "issue": 39,
+      "date": "September 2024",
+      "name": "Cameron Burton",
+      "academy": 29,
+      "client": "NATS",
+      "role": "Software Tester",
+      "speciality": "Software Testing/Test Automation",
+      "tools": [
+        "Test automation scripts"
+      ],
+      "methodology": "Agile",
+      "location": "Office (Whiteley)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Southampton",
+      "sector": "Aviation/Air Traffic Control",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 39/Academy Snapshot - Cameron Burton Issue 39.png"
+      ],
+      "roleCategory": "Test",
+      "specialism": "Automation"
+    },
+    {
+      "issue": 39,
+      "date": "September 2024",
+      "name": "Juan Gonzales",
+      "academy": 30,
+      "client": "IPF",
+      "role": "Junior Mobile Developer",
+      "speciality": "Mobile Development",
+      "tools": [
+        "Xamarin",
+        "C#",
+        "AWS",
+        "Azure DevOps"
+      ],
+      "methodology": "Agile (3-week sprints)",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Financial/Fintech",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 39/Academy Snapshot - Juan Gonzales.png"
+      ],
+      "roleCategory": "Dev",
+      "specialism": "Mobile"
+    },
+    {
+      "issue": 51,
+      "date": "September 2025",
+      "name": "Shennah Regua",
+      "academy": 35,
+      "client": "BAE Systems",
+      "role": "Junior Solution Architect",
+      "speciality": "Solution Architecture/Cloud",
+      "tools": [
+        "Visio",
+        "Azure",
+        "M365"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Defence",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 51/Academy Snapshot - Issue 51 (Shennah Regua).png"
+      ],
+      "roleCategory": "Dev",
+      "specialism": "Cloud / Architecture"
+    },
+    {
+      "issue": 51,
+      "date": "September 2025",
+      "name": "Yun Chen",
+      "academy": 33,
+      "client": "Law Enforcement Agency",
+      "role": "Business Analyst",
+      "speciality": "Business Analysis/UAT",
+      "tools": [
+        "M365",
+        "Jira",
+        "Azure"
+      ],
+      "methodology": "Waterfall governance/Scrum delivery",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Government/Law Enforcement",
+      "editionType": "Standard",
+      "pages": 2,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 51/Academy Snapshot - Issue 51 (Yun Chen).png"
+      ],
+      "roleCategory": "BA",
+      "specialism": "UAT"
+    },
+    {
+      "issue": 53,
+      "date": "November 2025",
+      "name": "Shade Babatunde",
+      "academy": 37,
+      "client": "Ten10 (Internal PMO)",
+      "role": "PMO Analyst",
+      "speciality": "Project Management/Data Governance",
+      "tools": [
+        "Excel",
+        "Salesforce",
+        "Oracle NetSuite (OpenAir)"
+      ],
+      "methodology": "Agile",
+      "location": "London Office",
+      "relocated": false,
+      "sector": "Internal/PMO",
+      "editionType": "Standard",
+      "pages": 1,
+      "fileFormat": "png",
+      "sourceFiles": [
+        "Issue 53/Academy Snapshot - Shade Babatunde.png"
+      ],
+      "roleCategory": "PM",
+      "specialism": "Governance"
+    },
+    {
+      "issue": 30,
+      "date": "December 2023",
+      "name": "Laura Dickinson",
+      "academy": 30,
+      "client": "NATS",
+      "role": "Software Engineer",
+      "roleCategory": "Dev",
+      "specialism": "Software Development",
+      "tools": [
+        "Qt",
+        "C++",
+        "TypeScript",
+        "React"
+      ],
+      "methodology": "Agile/Waterfall",
+      "location": "Office (Southampton)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Southampton",
+      "sector": "Aviation/Air Traffic Control",
+      "editionType": "Christmas Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 30 - Christmas Edition/Academy Snapshot - Issue 30.pdf"
+      ]
+    },
+    {
+      "issue": 30,
+      "date": "December 2023",
+      "name": "Marhamat Elahi",
+      "academy": 25,
+      "client": "NATS",
+      "role": "Test Engineer",
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional",
+      "tools": [
+        "Jira",
+        "Linux"
+      ],
+      "methodology": "Agile/Waterfall",
+      "location": "Office (4-5 days)",
+      "relocated": true,
+      "relocationDetails": "Relocated for client",
+      "sector": "Aviation/Air Traffic Control",
+      "editionType": "Christmas Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 30 - Christmas Edition/Academy Snapshot - Issue 30.pdf"
+      ]
+    },
+    {
+      "issue": 31,
+      "date": "January 2024",
+      "name": "Naomi Watt",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Academy Talent Advisor",
+      "roleCategory": "Internal",
+      "specialism": "Recruitment",
+      "tools": [],
+      "methodology": null,
+      "location": "Office",
+      "relocated": false,
+      "sector": "Internal/Recruitment",
+      "editionType": "Talent Team Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 31 - Talent Team Edition/Academy Snapshot - Issue 31 Talent Team Edition.pdf"
+      ]
+    },
+    {
+      "issue": 31,
+      "date": "January 2024",
+      "name": "Sarah Ghdhban",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Academy Talent Advisor",
+      "roleCategory": "Internal",
+      "specialism": "Recruitment",
+      "tools": [],
+      "methodology": null,
+      "location": "London Office",
+      "relocated": false,
+      "sector": "Internal/Recruitment",
+      "editionType": "Talent Team Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 31 - Talent Team Edition/Academy Snapshot - Issue 31 Talent Team Edition.pdf"
+      ]
+    },
+    {
+      "issue": 32,
+      "date": "February 2024",
+      "name": "Kelson Manuel",
+      "academy": 23,
+      "client": "Equiniti",
+      "role": "Junior DevOps Engineer",
+      "roleCategory": "DevOps",
+      "specialism": "DevOps",
+      "tools": [
+        "Scrumban",
+        "Kanban",
+        "Automation"
+      ],
+      "methodology": "Scrumban",
+      "location": "Remote (international team)",
+      "relocated": false,
+      "sector": "Financial/Pensions",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 32/Academy Snapshot - Issue 32 Kelson and Henry.pdf"
+      ]
+    },
+    {
+      "issue": 32,
+      "date": "February 2024",
+      "name": "Henry Scott",
+      "academy": 25,
+      "client": "Flowbird",
+      "role": "Test Engineer",
+      "roleCategory": "Test",
+      "specialism": "Transport Systems",
+      "tools": [
+        "TestRail",
+        "Jira"
+      ],
+      "methodology": "Agile",
+      "location": "Office (Poole)",
+      "relocated": true,
+      "relocationDetails": "London to Poole",
+      "sector": "Transport/Payments",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 32/Academy Snapshot - Issue 32 Kelson and Henry.pdf"
+      ]
+    },
+    {
+      "issue": 40,
+      "date": "October 2024",
+      "name": "Annabel Peel",
+      "academy": 29,
+      "client": "Government Agency",
+      "role": "Data Governance Analyst",
+      "roleCategory": "Data",
+      "specialism": "Data",
+      "tools": [
+        "Jira",
+        "AWS",
+        "Python"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (2-3 days office)",
+      "relocated": false,
+      "sector": "Government",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 40/Academy Snapshot - Annabel Peel - Issue 40.pdf"
+      ]
+    },
+    {
+      "issue": 40,
+      "date": "October 2024",
+      "name": "Kieran Cornwall",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Transformation Director",
+      "roleCategory": "Internal",
+      "specialism": "Training",
+      "tools": [],
+      "methodology": null,
+      "location": "Office",
+      "relocated": false,
+      "sector": "Internal/Leadership",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 40/Academy Snapshot - Kieran Cornwall - Issue 40.pdf"
+      ]
+    },
+    {
+      "issue": 41,
+      "date": "November 2024",
+      "name": "Emma Lobley",
+      "academy": 33,
+      "client": "Advania",
+      "role": "Data Analyst/Consultant",
+      "roleCategory": "Data",
+      "specialism": "Data Visualisation",
+      "tools": [
+        "Power BI",
+        "Power Apps",
+        "Power Automate",
+        "Azure DevOps"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (3 days Manchester office)",
+      "relocated": false,
+      "sector": "Technology/Consulting",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 41/Academy Snapshot - Issue 41 - Emma Lobley (4).pdf"
+      ]
+    },
+    {
+      "issue": 42,
+      "date": "December 2024",
+      "name": "Christopher Marsden-Carlton",
+      "academy": 36,
+      "client": "Royal Mail Group",
+      "role": "Solutions Analyst",
+      "roleCategory": "BA",
+      "specialism": "API Testing",
+      "tools": [
+        "API tools"
+      ],
+      "methodology": "Agile",
+      "location": "Office",
+      "relocated": false,
+      "sector": "Logistics/Postal",
+      "editionType": "Christmas Edition",
+      "fileFormat": "jpg",
+      "sourceFiles": []
+    },
+    {
+      "issue": 42,
+      "date": "December 2024",
+      "name": "Rigshan Prabakaran",
+      "academy": 27,
+      "client": "The Perfume Shop",
+      "role": "Graduate Junior Project Manager",
+      "roleCategory": "PM",
+      "specialism": "Project Delivery",
+      "tools": [
+        "Smartsheet",
+        "Jira",
+        "PRINCE2 Agile"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (3 days office)",
+      "relocated": false,
+      "sector": "Retail",
+      "editionType": "Christmas Edition",
+      "fileFormat": "jpg",
+      "sourceFiles": []
+    },
+    {
+      "issue": 43,
+      "date": "January 2025",
+      "name": "Nav Basra",
+      "academy": 32,
+      "client": "Rabobank",
+      "role": "DevSecOps Engineer",
+      "roleCategory": "DevOps",
+      "specialism": "DevOps",
+      "tools": [
+        "Azure DevOps",
+        "YAML",
+        "Python",
+        "PowerShell"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (2 days office)",
+      "relocated": false,
+      "sector": "Banking/Financial",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 43/Academy Snapshot - Issue 43 (Nav).pdf"
+      ]
+    },
+    {
+      "issue": 43,
+      "date": "January 2025",
+      "name": "Orla Sweeney",
+      "academy": 34,
+      "client": "Scottish Courts and Tribunals Services",
+      "role": "Software Tester",
+      "roleCategory": "Test",
+      "specialism": "Automation",
+      "tools": [
+        "Cucumber",
+        "JavaScript",
+        "Jira"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (1 day office, Edinburgh)",
+      "relocated": false,
+      "sector": "Government/Legal",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 43/Academy Snapshot - Issue 43 (Orla).pdf"
+      ]
+    },
+    {
+      "issue": 44,
+      "date": "February 2025",
+      "name": "Ivan Mogilenko",
+      "academy": 31,
+      "client": "BAE Systems",
+      "role": "Test Automation Analyst",
+      "roleCategory": "Test",
+      "specialism": "Automation",
+      "tools": [
+        "C#",
+        "Playwright",
+        "FlaUI",
+        "Jira",
+        "Bitbucket",
+        "Jenkins",
+        "Git"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Defence",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 44/Academy Snapshot - Issue 44 (Ivan).pdf"
+      ]
+    },
+    {
+      "issue": 45,
+      "date": "March 2025",
+      "name": "Corinne Batho-Newton",
+      "academy": 33,
+      "client": "Charities Aid Foundation (CAF)",
+      "role": "Technical Analyst",
+      "roleCategory": "BA",
+      "specialism": "Process Improvement",
+      "tools": [
+        "API",
+        "Wireframes"
+      ],
+      "methodology": "Agile",
+      "location": "Office (relocated)",
+      "relocated": true,
+      "relocationDetails": "Relocated near CAF office",
+      "sector": "Financial/Charity",
+      "editionType": "International Women's Day Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 45  - International Women_s Day Edition/Academy Snapshot - Corinne (Issue 45).pdf"
+      ]
+    },
+    {
+      "issue": 45,
+      "date": "March 2025",
+      "name": "Lauren Elliott",
+      "academy": 34,
+      "client": "International Personal Finance (IPF)",
+      "role": "Test Analyst",
+      "roleCategory": "Test",
+      "specialism": "Automation",
+      "tools": [
+        "Playwright",
+        "Selenium"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (Leeds, 2 days from Barnsley)",
+      "relocated": false,
+      "sector": "Financial/Fintech",
+      "editionType": "International Women's Day Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 45  - International Women_s Day Edition/Academy Snapshot - Issue 45 (Lauren Elliott).pdf"
+      ]
+    },
+    {
+      "issue": 46,
+      "date": "April 2025",
+      "name": "Ire Ogundeyi",
+      "academy": 32,
+      "client": "SSE",
+      "role": "Cloud Engineer",
+      "roleCategory": "DevOps",
+      "specialism": "Cloud / Architecture",
+      "tools": [
+        "Terraform",
+        "Python",
+        "Bash",
+        "PowerShell",
+        "Azure",
+        "AWS",
+        "Azure DevOps"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (Reading office)",
+      "relocated": false,
+      "sector": "Energy/Utilities",
+      "editionType": "Easter Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 46 - Easter Edition/Academy Snapshot - Issue 46 (Ire).pdf"
+      ]
+    },
+    {
+      "issue": 46,
+      "date": "April 2025",
+      "name": "Joshua Antwi",
+      "academy": 35,
+      "client": "ITV",
+      "role": "Platform Support Engineer",
+      "roleCategory": "Service Desk",
+      "specialism": "Service Desk",
+      "tools": [
+        "Planet V"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Media/Advertising",
+      "editionType": "Easter Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 46 - Easter Edition/Academy Snapshot - Issue 46 (Josh Antwi).pdf"
+      ]
+    },
+    {
+      "issue": 46,
+      "date": "April 2025",
+      "name": "Steve Osman",
+      "academy": null,
+      "client": "Ten10 (Internal)",
+      "role": "Head of Service Delivery",
+      "roleCategory": "Internal",
+      "specialism": "Operations",
+      "tools": [],
+      "methodology": null,
+      "location": "Office",
+      "relocated": false,
+      "sector": "Internal/Leadership",
+      "editionType": "Easter Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 46 - Easter Edition/Academy Snapshot - Issue 46 (Steve Osman).pdf"
+      ]
+    },
+    {
+      "issue": 47,
+      "date": "May 2025",
+      "name": "Alaa Mohamed",
+      "academy": 33,
+      "client": "Ten10 (Bench/Grow-IT)",
+      "role": "QA Analyst (upskilling)",
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional",
+      "tools": [
+        "ITIL",
+        "Web Development"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Internal/Training",
+      "editionType": "Bench Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 47 - Bench Edition/Academy Snapshot - Issue 47 (Alaa).pdf"
+      ]
+    },
+    {
+      "issue": 47,
+      "date": "May 2025",
+      "name": "Sam Neal",
+      "academy": 31,
+      "client": "Ten10 (Bench)",
+      "role": "Junior Product Owner (upskilling)",
+      "roleCategory": "BA",
+      "specialism": "Business Analysis",
+      "tools": [
+        "BCS",
+        "PSM I",
+        "PSPO I"
+      ],
+      "methodology": "Agile",
+      "location": "Remote (Leeds office Wednesdays)",
+      "relocated": false,
+      "sector": "Internal/Training",
+      "editionType": "Bench Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 47 - Bench Edition/Academy Snapshot - Issue 47 (Sam Neal).pdf"
+      ]
+    },
+    {
+      "issue": 48,
+      "date": "June 2025",
+      "name": "Jaskaram Dhesi",
+      "academy": 33,
+      "client": "Royal Mail Group",
+      "role": "Solutions Analyst",
+      "roleCategory": "BA",
+      "specialism": "API Testing",
+      "tools": [
+        "ReadyAPI",
+        "Excel"
+      ],
+      "methodology": "Agile",
+      "location": "Office",
+      "relocated": false,
+      "sector": "Logistics/Postal",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 48/Academy Snapshot - Issue 48 (Jas Dhesi).pdf"
+      ]
+    },
+    {
+      "issue": 48,
+      "date": "June 2025",
+      "name": "Lord Antwi",
+      "academy": 35,
+      "client": "Ten10 (Internal DTL)",
+      "role": "Junior Consultant",
+      "roleCategory": "Test",
+      "specialism": "Accessibility",
+      "tools": [
+        "WCAG"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Internal/Consulting",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 48/Academy Snapshot - Issue 48 (Lord Antwi) .pdf"
+      ]
+    },
+    {
+      "issue": 49,
+      "date": "July 2025",
+      "name": "Ghafar Anjani",
+      "academy": 38,
+      "client": "International Personal Finance (IPF)",
+      "role": "Junior Business Analyst",
+      "roleCategory": "BA",
+      "specialism": "Business Analysis",
+      "tools": [
+        "Confluence",
+        "Jira"
+      ],
+      "methodology": "Agile",
+      "location": "Office (relocated)",
+      "relocated": true,
+      "relocationDetails": "Relocated for role",
+      "sector": "Financial/Fintech",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 49/Academy Snapshot - Issue 49 (Al-Ghafar).pdf"
+      ]
+    },
+    {
+      "issue": 49,
+      "date": "July 2025",
+      "name": "Freddie Hughes",
+      "academy": 35,
+      "client": "Undisclosed (Enterprise)",
+      "role": "Test Automation/Change Consultant",
+      "roleCategory": "Test",
+      "specialism": "Automation",
+      "tools": [
+        "Selenium",
+        "PowerShell"
+      ],
+      "methodology": "Agile",
+      "location": "Office (Milton Keynes, 5 days)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Milton Keynes",
+      "sector": "Technology",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 49/Academy Snapshot - Issue 49 (Freddie Hughes).pdf"
+      ]
+    },
+    {
+      "issue": 50,
+      "date": "August 2025",
+      "name": "James Forcer",
+      "academy": 29,
+      "client": "NCA (National Crime Agency)",
+      "role": "Service Desk Analyst",
+      "roleCategory": "Service Desk",
+      "specialism": "Service Desk",
+      "tools": [],
+      "methodology": "Shift-based",
+      "location": "Office (24/7 shifts)",
+      "relocated": false,
+      "sector": "Government/Law Enforcement",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 50/Academy Snapshot - Issue 50 (James Forcer).pdf"
+      ]
+    },
+    {
+      "issue": 50,
+      "date": "August 2025",
+      "name": "Minnie Box",
+      "academy": 37,
+      "client": "Royal Mail",
+      "role": "Customer Solutions Analyst",
+      "roleCategory": "Test",
+      "specialism": "API Testing",
+      "tools": [
+        "Ready API"
+      ],
+      "methodology": "Agile",
+      "location": "Office (Milton Keynes, 5 days)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Milton Keynes",
+      "sector": "Logistics/Postal",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 50/Academy Snapshot - Issue 50 (Minnie Box).pdf"
+      ]
+    },
+    {
+      "issue": 52,
+      "date": "October 2025",
+      "name": "Hannah Parker",
+      "academy": 37,
+      "client": "Enterprise Client",
+      "role": "Product Owner",
+      "roleCategory": "PM",
+      "specialism": "Project Delivery",
+      "tools": [
+        "Jira",
+        "SAP",
+        "M365"
+      ],
+      "methodology": "SAFe Agile",
+      "location": "Hybrid (remote + on-site sessions)",
+      "relocated": false,
+      "sector": "Technology",
+      "editionType": "Halloween Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 52 - Halloween Edition/Academy Snapshot - Hannah Parker.pdf"
+      ]
+    },
+    {
+      "issue": 52,
+      "date": "October 2025",
+      "name": "Izzey Box",
+      "academy": 37,
+      "client": "Royal Mail",
+      "role": "Customer Solutions Analyst",
+      "roleCategory": "Test",
+      "specialism": "API Testing",
+      "tools": [
+        "Ready API",
+        "Notepad++"
+      ],
+      "methodology": "Agile",
+      "location": "Office (5 days, Milton Keynes)",
+      "relocated": true,
+      "relocationDetails": "Relocated to Milton Keynes",
+      "sector": "Logistics/Postal",
+      "editionType": "Halloween Edition",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 52 - Halloween Edition/Academy Snapshot - Izzey Box.pdf"
+      ]
+    },
+    {
+      "issue": 53,
+      "date": "November 2025",
+      "name": "Natalia Burgess",
+      "academy": 35,
+      "client": "SSE Thermal",
+      "role": "Junior Portfolio Analyst",
+      "roleCategory": "PM",
+      "specialism": "Project Delivery",
+      "tools": [
+        "Azure DevOps",
+        "Excel",
+        "PowerPoint",
+        "Power BI"
+      ],
+      "methodology": "Agile",
+      "location": "Remote",
+      "relocated": false,
+      "sector": "Energy/Utilities",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 53/Academy Snapshot - Natalia Burgess.pdf"
+      ]
+    },
+    {
+      "issue": 55,
+      "date": "January 2026",
+      "name": "Deep Shah",
+      "academy": 39,
+      "client": "Tokio Marine Kiln",
+      "role": "QA Engineer",
+      "roleCategory": "Test",
+      "specialism": "Automation",
+      "tools": [
+        "Salesforce",
+        "Automation Framework"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (3 days office)",
+      "relocated": false,
+      "sector": "Insurance/Financial",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 55/Academy Snapshot - Issue 55 (Deep Shah).pdf"
+      ]
+    },
+    {
+      "issue": 55,
+      "date": "January 2026",
+      "name": "Donnell Ofori",
+      "academy": 38,
+      "client": "NATS",
+      "role": "Test Engineer",
+      "roleCategory": "Test",
+      "specialism": "Aviation Systems",
+      "tools": [
+        "Jira"
+      ],
+      "methodology": "Agile",
+      "location": "Office (Prestwick, Scotland)",
+      "relocated": true,
+      "relocationDetails": "Travels to Prestwick for test campaigns",
+      "sector": "Aviation/Air Traffic Control",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 55/Academy Snapshot - Issue 55 (Donnell Ofori).pdf"
+      ]
+    },
+    {
+      "issue": 56,
+      "date": "February 2026",
+      "name": "Tameeca Naidoo",
+      "academy": 39,
+      "client": "KPMG",
+      "role": "Test Automation Engineer",
+      "roleCategory": "Test",
+      "specialism": "Automation",
+      "tools": [
+        "Java",
+        "Playwright",
+        "Jira"
+      ],
+      "methodology": "Kanban",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Professional Services",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 56/Academy Snapshot - Issue 56 (Tameeca Naido).pdf"
+      ]
+    },
+    {
+      "issue": 57,
+      "date": "March 2026",
+      "name": "Ikechi Obikwelu",
+      "academy": 39,
+      "client": "NCC Group",
+      "role": "Associate Security Consultant",
+      "roleCategory": "Security",
+      "specialism": "Cyber Security",
+      "tools": [
+        "ISO 27001",
+        "NIST CSF",
+        "Cyber Essentials",
+        "Azure",
+        "Microsoft Purview"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Cyber Security/Consulting",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 57/Academy Snapshot - Issue 57 (Ikechi).pdf"
+      ]
+    },
+    {
+      "issue": 57,
+      "date": "March 2026",
+      "name": "Ore Mowaiye",
+      "academy": 37,
+      "client": "Bank of England",
+      "role": "Test Engineer",
+      "roleCategory": "Test",
+      "specialism": "Automation",
+      "tools": [
+        "Java",
+        "Jira",
+        "Confluence",
+        "BDD"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Banking/Financial",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 57/Academy Snapshot - Issue 57 (Ore M).pdf"
+      ]
+    },
+    {
+      "issue": 57,
+      "date": "March 2026",
+      "name": "Sam Clarke-Quy",
+      "academy": 36,
+      "client": "Civil Service (Policing)",
+      "role": "Business Analyst",
+      "roleCategory": "BA",
+      "specialism": "Business Analysis",
+      "tools": [
+        "Excel"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid (2 days office + monthly travel)",
+      "relocated": false,
+      "sector": "Government/Policing",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 57/Academy Snapshot - Issue 57 (Sam Clarke-Quy).pdf"
+      ]
+    },
+    {
+      "issue": 58,
+      "date": "April 2026",
+      "name": "Danyal Mirza",
+      "academy": 38,
+      "client": "Equiniti (EQ)",
+      "role": "Junior Test Consultant",
+      "roleCategory": "Test",
+      "specialism": "Manual / Functional",
+      "tools": [
+        "Azure DevOps"
+      ],
+      "methodology": "Wagile (Waterfall/Agile)",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Financial/Pensions",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 58/Academy Snapshot - Issue 58 (Danyal Mirza).pdf"
+      ]
+    },
+    {
+      "issue": 58,
+      "date": "April 2026",
+      "name": "Mahia Ananna",
+      "academy": 37,
+      "client": "NATS",
+      "role": "Test Engineer",
+      "roleCategory": "Test",
+      "specialism": "Aviation Systems",
+      "tools": [
+        "Jira",
+        "PleaseReview"
+      ],
+      "methodology": "Waterfall",
+      "location": "Office",
+      "relocated": false,
+      "sector": "Aviation/Air Traffic Control",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 58/Academy Snapshot - Issue 58 (Mahia Ananna).pdf"
+      ]
+    },
+    {
+      "issue": 59,
+      "date": "May 2026",
+      "name": "Deborah Olowookere",
+      "academy": 39,
+      "client": "NCC Group",
+      "role": "Associate Security Consultant",
+      "roleCategory": "Security",
+      "specialism": "Cyber Security",
+      "tools": [
+        "NIST",
+        "Cyber Assessment Framework"
+      ],
+      "methodology": "Agile",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Cyber Security/Consulting",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 59/Academy Snapshot - Issue 59 (Deborah Olowookere).pdf"
+      ]
+    },
+    {
+      "issue": 59,
+      "date": "May 2026",
+      "name": "Senada Khan",
+      "academy": 40,
+      "client": "NATS",
+      "role": "PMO/Project Manager",
+      "roleCategory": "PM",
+      "specialism": "Project Delivery",
+      "tools": [
+        "Microsoft Projects",
+        "Salesforce",
+        "Power BI",
+        "Excel"
+      ],
+      "methodology": "Waterfall",
+      "location": "Hybrid",
+      "relocated": false,
+      "sector": "Aviation/Air Traffic Control",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 59/Academy Snapshot - Issue 59 (Senada Khan).pdf"
+      ]
+    },
+    {
+      "issue": 60,
+      "date": "June 2026",
+      "name": "Richard Otor",
+      "academy": 39,
+      "client": "SSE (SSEN Distribution)",
+      "role": "Junior Telecoms Engineer",
+      "roleCategory": "Dev",
+      "specialism": "Software Development",
+      "tools": [
+        "Electric Office",
+        "Vodafone IoT",
+        "PowerON"
+      ],
+      "methodology": "N/A",
+      "location": "Office",
+      "relocated": false,
+      "sector": "Energy/Utilities/Telecoms",
+      "editionType": "Standard",
+      "fileFormat": "pdf",
+      "sourceFiles": [
+        "Issue 60/Academy Snapshot - Issue 60 (Richard Otor).pdf"
+      ]
+    }
+  ]
+}
