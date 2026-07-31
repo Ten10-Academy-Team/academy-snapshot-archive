@@ -80,13 +80,22 @@ function filter(){
     render(res);
 }
 
+function openPopup(url){
+    var w=Math.round(screen.width*0.8);
+    var h=Math.round(screen.height*0.85);
+    var left=Math.round((screen.width-w)/2);
+    var top=Math.round((screen.height-h)/2);
+    window.open(url,'snapshot_viewer','width='+w+',height='+h+',left='+left+',top='+top+',scrollbars=yes,resizable=yes');
+    return false;
+}
+
 function render(items){
     const g=document.getElementById('grid');
     if(!items.length){g.innerHTML='<div class="empty">No matches found</div>';return}
     g.innerHTML=items.map((e,idx)=>{
         const badge=e.rl?'<span class="badge badge-reloc">Relocated</span>':'';
         const href=e.f?BASE+encodeURI(e.f):BASE;
-        return `<a class="card" href="${href}" target="_blank" rel="noopener" data-idx="${idx}">
+        return `<a class="card" href="${href}" target="_blank" rel="noopener" onclick="return openPopup(this.href)">
 <div class="card-bar"></div>${badge}
 <div class="card-body">
 <div class="card-issue">Issue ${e.i} · ${e.d}</div>
