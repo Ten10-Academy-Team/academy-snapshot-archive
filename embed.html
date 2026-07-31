@@ -89,12 +89,18 @@ function openPopup(url){
     return false;
 }
 
+function getViewerUrl(e){
+    if(!e.f)return BASE;
+    var fileUrl=BASE+encodeURI(e.f);
+    return BASE+'viewer.html?file='+encodeURIComponent(fileUrl)+'&name='+encodeURIComponent(e.n+' - Issue '+e.i);
+}
+
 function render(items){
     const g=document.getElementById('grid');
     if(!items.length){g.innerHTML='<div class="empty">No matches found</div>';return}
     g.innerHTML=items.map((e,idx)=>{
         const badge=e.rl?'<span class="badge badge-reloc">Relocated</span>':'';
-        const href=e.f?BASE+encodeURI(e.f):BASE;
+        const href=getViewerUrl(e);
         return `<a class="card" href="${href}" target="_blank" rel="noopener" onclick="return openPopup(this.href)">
 <div class="card-bar"></div>${badge}
 <div class="card-body">

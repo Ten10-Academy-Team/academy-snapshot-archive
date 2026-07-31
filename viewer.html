@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Academy Snapshot</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#1a1a2e;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem}
+.viewer-header{
+    width:100%;max-width:900px;display:flex;justify-content:space-between;align-items:center;
+    padding:0.6rem 0;margin-bottom:0.75rem;
+}
+.viewer-title{color:rgba(255,255,255,0.8);font-size:0.8rem;font-weight:500}
+.close-btn{
+    background:rgba(255,255,255,0.15);border:none;color:white;
+    padding:0.4rem 1rem;border-radius:6px;font-size:0.8rem;font-family:inherit;
+    cursor:pointer;transition:background 0.2s;
+}
+.close-btn:hover{background:rgba(255,255,255,0.25)}
+.content{width:100%;max-width:900px;display:flex;flex-direction:column;gap:0.75rem;align-items:center}
+.content img{width:100%;border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,0.4)}
+.content canvas{width:100%;border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,0.4);display:block}
+.loading{color:rgba(255,255,255,0.6);font-size:0.9rem;padding:3rem}
+.error{color:#e94560;font-size:0.9rem;padding:3rem}
+</style>
+</head>
+<body>
+<div class="viewer-header">
+    <span class="viewer-title" id="title">Academy Snapshot</span>
+    <button class="close-btn" onclick="window.close()">✕ Close</button>
+</div>
+<div class="content" id="content">
+    <div class="loading">Loading document...</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+const params=new URLSearchParams(window.location.search);
+const file=params.get('file');
+const name=params.get('name')||'Academy Snapshot';
+document.getElementById('title').textContent=name;
+document.title=name;
+
+const content=document.getElementById('content');
+
+if(!file){
+    content.innerHTML='<div class="error">No document specified.</div>';
+} else {
+    const ext=file.split('.').pop().toLowerCase();
+    if(['png','jpg','jpeg'].includes(ext)){
+        const img=document.createElement('img');
+        img.src=file;
+        img.alt=name;
+        img.onload=()=>{content.innerHTML='';content.appendChild(img)};
+        img.onerror=()=>{content.innerHTML='<div class="error">Failed to load image.</div>'};
+    } else if(ext==='pdf'){
+        renderPDF(file);
+    } else {
+        content.innerHTML='<div class="error">Unsupported file type.</div>';
+    }
+}
+
+async function renderPDF(url){
+    try{
+        const pdf=await pdfjsLib.getDocument(url).promise;
+        content.innerHTML='';
+        for(let p=1;p<=pdf.numPages;p++){
+            const page=await pdf.getPage(p);
+            const scale=2;
+            const viewport=page.getViewport({scale});
+            const canvas=document.createElement('canvas');
+            canvas.width=viewport.width;
+            canvas.height=viewport.height;
+            await page.render({canvasContext:canvas.getContext('2d'),viewport}).promise;
+            content.appendChild(canvas);
+        }
+    }catch(err){
+        content.innerHTML='<div class="error">Failed to render PDF. <a href="'+url+'" style="color:#e94560" target="_blank">Open directly</a></div>';
+    }
+}
+</script>
+</body>
+</html>
